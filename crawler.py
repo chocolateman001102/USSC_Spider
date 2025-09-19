@@ -122,14 +122,12 @@ def save_bytes(path: Path, data: bytes) -> None:
 
 
 def make_output_paths(output_dir: Path, query_code: str, sha256_hex: str, suffix: str, custom_name: Optional[str] = None) -> Path:
-    """创建输出路径，按案件编号组织文件夹"""
-    # 按案件编号创建文件夹
-    case_folder = output_dir / query_code
+    """创建输出路径"""
     if custom_name:
         name = f"{custom_name}{suffix}"
     else:
         name = f"{query_code}_{sha256_hex[:8]}{suffix}"
-    return case_folder / name
+    return output_dir / name
 
 
 def jitter_sleep(base: float, jitter: float = 0.5) -> None:
@@ -520,7 +518,9 @@ def init_logger(out_dir: Path) -> None:
 
 
 def write_json(output_dir: Path, query_code: str, sha256_hex: str, payload: Dict[str, Any], custom_name: Optional[str] = None) -> Path:
-    path = make_output_paths(output_dir / 'json', query_code, sha256_hex, '.json', custom_name)
+    # 创建案件文件夹下的json子文件夹
+    case_dir = output_dir / query_code / 'json'
+    path = make_output_paths(case_dir, query_code, sha256_hex, '.json', custom_name)
     ensure_dir(path.parent)
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
@@ -528,7 +528,9 @@ def write_json(output_dir: Path, query_code: str, sha256_hex: str, payload: Dict
 
 
 def write_pdf(output_dir: Path, query_code: str, sha256_hex: str, data: bytes, custom_name: Optional[str] = None) -> Path:
-    path = make_output_paths(output_dir / 'pdf', query_code, sha256_hex, '.pdf', custom_name)
+    # 创建案件文件夹下的pdf子文件夹
+    case_dir = output_dir / query_code / 'pdf'
+    path = make_output_paths(case_dir, query_code, sha256_hex, '.pdf', custom_name)
     save_bytes(path, data)
     return path
 

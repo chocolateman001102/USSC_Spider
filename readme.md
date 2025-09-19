@@ -24,7 +24,7 @@ pip install ocrmypdf
 ## Usage
 
 ```bash
-python crawler_pdf_to_json.py \
+python crawler.py \
   --queries-json cases.jsonl \
   --output-dir ./data \
   --site scotus
