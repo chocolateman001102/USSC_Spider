@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-961",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-961.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-961/72624/20181119164438886_Frank%20v.%20Gaos%20-%20Motion%20for%20Extension%20of%20Time.pdf",
+    "fetched_at": "2025-09-20T00:02:58.560580Z",
+    "sha256": "5162037ec7d4424467d6c43d114437c436b028c8e946f240d07615fd2ba6ee16",
+    "filename": "Nov192018_Motion for an extension of time to file the supplemental briefs and replies filed.pdf",
+    "file_size_bytes": 1376207,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Nov 19 2018",
+      "extra": {
+        "date": "Nov 19 2018",
+        "custom_filename": "Nov192018_Motion for an extension of time to file the supplemental briefs and replies filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

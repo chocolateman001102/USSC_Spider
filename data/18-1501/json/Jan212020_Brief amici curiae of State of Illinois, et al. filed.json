@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1501",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-1501.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1501/129303/20200121164526429_Liu%20v.%20SEC%20Illinois%20Amicus%20Brief%20Final%20to%20File.pdf",
+    "fetched_at": "2025-09-20T01:07:27.866476Z",
+    "sha256": "f2d3775df4c0d4d982cb8194e7c75f0751b8b65502d4f9e377c9f8ce004f2d8b",
+    "filename": "Jan212020_Brief amici curiae of State of Illinois, et al. filed.pdf",
+    "file_size_bytes": 273887,
+    "pages": 48,
+    "extraction": {
+      "method": "text",
+      "chars": 48,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jan 21 2020",
+      "extra": {
+        "date": "Jan 21 2020",
+        "custom_filename": "Jan212020_Brief amici curiae of State of Illinois, et al. filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

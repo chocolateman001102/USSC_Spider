@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-71",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-71.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-71/45447/20180502144458914_Extension%20Letter%2017-71.pdf",
+    "fetched_at": "2025-09-20T00:36:34.775569Z",
+    "sha256": "a4b6a10f7a1c8c5ee2ab7b691742eb15baa813a70abf64c384003cc0b50ab96f",
+    "filename": "May022018_Motion for an extension of time to file respondents' briefs on the merits filed.pdf",
+    "file_size_bytes": 149157,
+    "pages": 8,
+    "extraction": {
+      "method": "text",
+      "chars": 8,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "May 02 2018",
+      "extra": {
+        "date": "May 02 2018",
+        "custom_filename": "May022018_Motion for an extension of time to file respondents' briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f"
+    }
+  }
+}

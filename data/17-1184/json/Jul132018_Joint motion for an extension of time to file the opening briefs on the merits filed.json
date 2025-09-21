@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-1184",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1184.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-1184/54211/20180713154307273_Biestek%20No.%2017-1184%20Joint%20Request%20for%20Extension%20of%20Time.pdf",
+    "fetched_at": "2025-09-19T23:52:31.018884Z",
+    "sha256": "c54a32797665efbf004306be19c8972f07bc38bccfb28e92e9c21f12a471efcc",
+    "filename": "Jul132018_Joint motion for an extension of time to file the opening briefs on the merits filed.pdf",
+    "file_size_bytes": 324988,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 162,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 13 2018",
+      "extra": {
+        "date": "Jul 13 2018",
+        "custom_filename": "Jul132018_Joint motion for an extension of time to file the opening briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [
+        "1099 NEW YORK AVENUE, NW SUITE 900 WASHINGTON, DC 20001-4412 \n\nCHICAGO   LONDON   L OS ANGELES   NEW YOR K   W ASHINGTON, DC \n\nWWW.JENNER.COM"
+      ],
+      "full_text": "1099 NEW YORK AVENUE, NW SUITE 900 WASHINGTON, DC 20001-4412 \n\nCHICAGO   LONDON   L OS ANGELES   NEW YOR K   W ASHINGTON, DC \n\nWWW.JENNER.COM  \n\n \n \n \n \n \n \n \n \n\f"
+    }
+  }
+}

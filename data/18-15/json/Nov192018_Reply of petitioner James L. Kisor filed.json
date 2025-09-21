@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-15",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-15.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-15/72649/20181119193331867_18-15.rb.pdf",
+    "fetched_at": "2025-09-20T00:09:45.084770Z",
+    "sha256": "4053193d35337be768349726bb50c0e3e001e0b7593916b962e3c6d9812ded9a",
+    "filename": "Nov192018_Reply of petitioner James L. Kisor filed.pdf",
+    "file_size_bytes": 127828,
+    "pages": 16,
+    "extraction": {
+      "method": "text",
+      "chars": 16,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Nov 19 2018",
+      "extra": {
+        "date": "Nov 19 2018",
+        "custom_filename": "Nov192018_Reply of petitioner James L. Kisor filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

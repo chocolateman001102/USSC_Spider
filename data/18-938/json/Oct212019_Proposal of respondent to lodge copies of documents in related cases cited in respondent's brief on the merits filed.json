@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-938",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-938.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-938/121215/20191104112544296_Motion%20to%20Lodge%20Documents.pdf",
+    "fetched_at": "2025-09-20T01:22:19.516542Z",
+    "sha256": "23f9e2f94393015ce4030950e94cdf34493a8e5efff3261586d63a428ac73228",
+    "filename": "Oct212019_Proposal of respondent to lodge copies of documents in related cases cited in respondent's brief on the merits filed.pdf",
+    "file_size_bytes": 425838,
+    "pages": 2,
+    "extraction": {
+      "method": "text",
+      "chars": 2,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Oct 21 2019",
+      "extra": {
+        "date": "Oct 21 2019",
+        "custom_filename": "Oct212019_Proposal of respondent to lodge copies of documents in related cases cited in respondent's brief on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f"
+    }
+  }
+}

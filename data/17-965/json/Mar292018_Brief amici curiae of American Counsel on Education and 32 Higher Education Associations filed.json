@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-965",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-965.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-965/41569/20180329142326523_17-965bsacAmericanCouncilOn%20Education.pdf",
+    "fetched_at": "2025-09-19T23:45:45.515359Z",
+    "sha256": "d17a5ccb8ae6a8534ed1ce4f10ecc465734e8f755143af8b043ecc2ff26b9d2e",
+    "filename": "Mar292018_Brief amici curiae of American Counsel on Education and 32 Higher Education Associations filed.pdf",
+    "file_size_bytes": 5045615,
+    "pages": 63,
+    "extraction": {
+      "method": "text",
+      "chars": 63,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 29 2018",
+      "extra": {
+        "date": "Mar 29 2018",
+        "custom_filename": "Mar292018_Brief amici curiae of American Counsel on Education and 32 Higher Education Associations filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

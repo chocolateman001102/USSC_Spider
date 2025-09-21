@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-834",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-834.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-834/95874/20190409161746902_Garcia%20Letter.pdf",
+    "fetched_at": "2025-09-20T01:02:55.462094Z",
+    "sha256": "7becb5ea358e3adf888d785271baef4d80e7953984353c60e9effb5d1d3a827e",
+    "filename": "Apr092019_Joint motion for an extension of time to file the briefs on the merits filed.pdf",
+    "file_size_bytes": 458515,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 09 2019",
+      "extra": {
+        "date": "Apr 09 2019",
+        "custom_filename": "Apr092019_Joint motion for an extension of time to file the briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

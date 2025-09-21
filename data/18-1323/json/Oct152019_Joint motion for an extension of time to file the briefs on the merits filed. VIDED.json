@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1323",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-1323.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1323/118961/20191015111138205_Letter%20to%20Clerk%2010.11.19.pdf",
+    "fetched_at": "2025-09-20T00:59:13.131571Z",
+    "sha256": "a5f70a11e6ddeb86dc5bedcd719eb066574f61b901a081e2a424cd7fbe205ed4",
+    "filename": "Oct152019_Joint motion for an extension of time to file the briefs on the merits filed. VIDED.pdf",
+    "file_size_bytes": 28576,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Oct 15 2019",
+      "extra": {
+        "date": "Oct 15 2019",
+        "custom_filename": "Oct152019_Joint motion for an extension of time to file the briefs on the merits filed. VIDED"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

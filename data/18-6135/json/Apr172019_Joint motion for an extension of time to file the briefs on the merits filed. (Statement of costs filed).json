@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-6135",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-6135.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-6135/96747/20190417100413193_Kahler%20No.%2018-6135%20Proposed%20Briefing%20Schedule.pdf",
+    "fetched_at": "2025-09-20T01:02:07.430202Z",
+    "sha256": "c9a5ea7a1c2cc755c10866148c4c1af4c61f3541bdc5f5f643a0d7497e20768d",
+    "filename": "Apr172019_Joint motion for an extension of time to file the briefs on the merits filed. (Statement of costs filed).pdf",
+    "file_size_bytes": 41753,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 17 2019",
+      "extra": {
+        "date": "Apr 17 2019",
+        "custom_filename": "Apr172019_Joint motion for an extension of time to file the briefs on the merits filed. (Statement of costs filed)"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

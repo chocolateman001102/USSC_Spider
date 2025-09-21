@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "19-431",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/19-431.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/19/19-431/137503/20200309144644738_Laycock%20Amicus%20Brief.pdf",
+    "fetched_at": "2025-09-20T01:05:33.138638Z",
+    "sha256": "47e41031b58934f00d5b627832414aa661d1b3e1d6ca9f2f5c1f9af08da5c6ad",
+    "filename": "Mar092020_Brief amicus curiae of Professor Douglas Laycock filed. VIDED.pdf",
+    "file_size_bytes": 325180,
+    "pages": 26,
+    "extraction": {
+      "method": "text",
+      "chars": 26,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 09 2020",
+      "extra": {
+        "date": "Mar 09 2020",
+        "custom_filename": "Mar092020_Brief amicus curiae of Professor Douglas Laycock filed. VIDED"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

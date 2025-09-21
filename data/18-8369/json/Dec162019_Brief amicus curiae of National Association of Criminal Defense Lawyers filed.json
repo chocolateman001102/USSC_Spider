@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-8369",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-8369.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-8369/125689/20191216154113916_2019.12.16%20NACDL%20Amicus%20Brief_18-8369.pdf",
+    "fetched_at": "2025-09-20T01:07:50.709752Z",
+    "sha256": "7340a176575dd307566da18c8ff5822ce09226b3cbb32f4fb6cd68f44ba2c82d",
+    "filename": "Dec162019_Brief amicus curiae of National Association of Criminal Defense Lawyers filed.pdf",
+    "file_size_bytes": 223548,
+    "pages": 31,
+    "extraction": {
+      "method": "text",
+      "chars": 40,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Dec 16 2019",
+      "extra": {
+        "date": "Dec 16 2019",
+        "custom_filename": "Dec162019_Brief amicus curiae of National Association of Criminal Defense Lawyers filed"
+      }
+    },
+    "content": {
+      "page_text": [
+        "",
+        "\n\n"
+      ],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\n\n\f\n\n\n\n\f\f\f\f"
+    }
+  }
+}

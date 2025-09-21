@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-21",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-21.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-21/24929/20171222121859103_17-21ts.pdf",
+    "fetched_at": "2025-09-19T23:35:57.828511Z",
+    "sha256": "a6e456608536a84f718bdef20edc42cdce468f4a4695a77bd9cbc0493f7cb08c",
+    "filename": "Dec222017_Brief of petitioner Fane Lozman filed.pdf",
+    "file_size_bytes": 10052803,
+    "pages": 60,
+    "extraction": {
+      "method": "text",
+      "chars": 86,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Dec 22 2017",
+      "extra": {
+        "date": "Dec 22 2017",
+        "custom_filename": "Dec222017_Brief of petitioner Fane Lozman filed"
+      }
+    },
+    "content": {
+      "page_text": [
+        "IN THE",
+        "—\n\n’\n\n—",
+        "’",
+        "—"
+      ],
+      "full_text": "IN THE \n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f—\n\n’\n\n—\n\n\f\f\f\f\f\f\f\f\f\f \n\f\f\f\f\f\f\f\f\f\f\f\f’\n\n\f\f\f\f\f\f\f\f\f\f\f—\n\n\f\f\f\f\f\f\f"
+    }
+  }
+}

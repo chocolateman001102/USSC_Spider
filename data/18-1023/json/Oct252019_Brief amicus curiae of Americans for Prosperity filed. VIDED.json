@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1023",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-1023.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1023/120273/20191025131606691_AFP%20Main%20Brief.pdf",
+    "fetched_at": "2025-09-20T01:08:54.425500Z",
+    "sha256": "554e7836e502cafe1aa98e06fd791c8ca8d19c538a22d4103d97d967ee3cdecf",
+    "filename": "Oct252019_Brief amicus curiae of Americans for Prosperity filed. VIDED.pdf",
+    "file_size_bytes": 1308480,
+    "pages": 20,
+    "extraction": {
+      "method": "text",
+      "chars": 20,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Oct 25 2019",
+      "extra": {
+        "date": "Oct 25 2019",
+        "custom_filename": "Oct252019_Brief amicus curiae of Americans for Prosperity filed. VIDED"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

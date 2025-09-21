@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-481",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-481.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-481/77488/20181224125606519_18-481-%20Reply%20iso%20Cert%20Petition.pdf",
+    "fetched_at": "2025-09-19T23:59:30.341291Z",
+    "sha256": "8362d879a410bab6d9ea665bf125483fcd5ed836192f5589d9cc3096351100d7",
+    "filename": "Dec242018_Reply of petitioner Food Marketing Institute filed.pdf",
+    "file_size_bytes": 155990,
+    "pages": 17,
+    "extraction": {
+      "method": "text",
+      "chars": 17,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Dec 24 2018",
+      "extra": {
+        "date": "Dec 24 2018",
+        "custom_filename": "Dec242018_Reply of petitioner Food Marketing Institute filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

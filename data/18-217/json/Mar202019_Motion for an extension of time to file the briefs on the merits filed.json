@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-217",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-217.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-217/92580/20190320155251826_Mathena%20v.%20Malvo%20extension%20request.pdf",
+    "fetched_at": "2025-09-20T01:09:08.983106Z",
+    "sha256": "f928de8e292bd672472b45ca20b9ee9fc5f68c37953a21614ff915c16a66578d",
+    "filename": "Mar202019_Motion for an extension of time to file the briefs on the merits filed.pdf",
+    "file_size_bytes": 42576,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 20 2019",
+      "extra": {
+        "date": "Mar 20 2019",
+        "custom_filename": "Mar202019_Motion for an extension of time to file the briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

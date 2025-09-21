@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-1618",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1618.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-1618/106958/20190703120111536_Amicus%20Brief%20of%20Modern%20Military%20Association%20of%20America%20et%20al..pdf",
+    "fetched_at": "2025-09-20T00:41:25.386813Z",
+    "sha256": "9c45b975e58832402640d9242e870af3caf30738fe1c7ee2f1a920eae46797e5",
+    "filename": "Jul032019_Brief amici curiae of Modern Military Association of America and Transgender American Veterans Association filed. VIDED. (Also in 18-107).pdf",
+    "file_size_bytes": 695963,
+    "pages": 57,
+    "extraction": {
+      "method": "text",
+      "chars": 93,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 03 2019",
+      "extra": {
+        "date": "Jul 03 2019",
+        "custom_filename": "Jul032019_Brief amici curiae of Modern Military Association of America and Transgender American Veterans Association filed. VIDED. (Also in 18-107)"
+      }
+    },
+    "content": {
+      "page_text": [
+        "(cid:3013)",
+        "(cid:3013)",
+        "(cid:3013)"
+      ],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f(cid:3013)\n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f(cid:3013)\n\n\f\f\f\f\f\f\f\f\f(cid:3013)\n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-778",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-778.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-778/42860/20180410110004668_Quarles%20Reply%20Brief.pdf",
+    "fetched_at": "2025-09-20T00:22:20.272507Z",
+    "sha256": "c9e571e279e92929bc8ac18572903a2f96fb951a207faf6b31fa6c3954ad844e",
+    "filename": "Apr102018_Reply of petitioner Jamar Quarles filed.pdf",
+    "file_size_bytes": 111855,
+    "pages": 7,
+    "extraction": {
+      "method": "text",
+      "chars": 7,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 10 2018",
+      "extra": {
+        "date": "Apr 10 2018",
+        "custom_filename": "Apr102018_Reply of petitioner Jamar Quarles filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f"
+    }
+  }
+}

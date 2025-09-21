@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-1299",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1299.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-1299/54650/20180718125053454_FTB%20Briefing%20Letter--to%20file.pdf",
+    "fetched_at": "2025-09-20T00:01:17.558085Z",
+    "sha256": "9940583e2208c87aa8a482a8931a4f62df2262eb312c4e3523b2558aff575028",
+    "filename": "Jul182018_Motion for an extension of time to file the opening briefs on the merits filed.pdf",
+    "file_size_bytes": 65095,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 18 2018",
+      "extra": {
+        "date": "Jul 18 2018",
+        "custom_filename": "Jul182018_Motion for an extension of time to file the opening briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

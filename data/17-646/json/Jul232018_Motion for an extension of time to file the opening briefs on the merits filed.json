@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-646",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-646.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-646/55170/20180723172255960_17-646%20Letter%20re%20Briefing%20Schedule.pdf",
+    "fetched_at": "2025-09-20T00:03:21.519355Z",
+    "sha256": "cb84ecdc60ab422ed2dd111d041a30034bffd7a2ed332a19a159d49a4cfe5f48",
+    "filename": "Jul232018_Motion for an extension of time to file the opening briefs on the merits filed.pdf",
+    "file_size_bytes": 44213,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 23 2018",
+      "extra": {
+        "date": "Jul 23 2018",
+        "custom_filename": "Jul232018_Motion for an extension of time to file the opening briefs on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

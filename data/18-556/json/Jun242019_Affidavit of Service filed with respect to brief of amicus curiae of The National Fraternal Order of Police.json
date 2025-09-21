@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-556",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-556.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-556/103813/20190624111750232_Kansas%20v%20Glover%20Affidavit%20of%20Service.pdf",
+    "fetched_at": "2025-09-20T01:03:43.483016Z",
+    "sha256": "1e53c1e4b29306ad556f218177b8b2be5b42e414c9186a169cf66892c004654c",
+    "filename": "Jun242019_Affidavit of Service filed with respect to brief of amicus curiae of The National Fraternal Order of Police.pdf",
+    "file_size_bytes": 121910,
+    "pages": 2,
+    "extraction": {
+      "method": "text",
+      "chars": 2,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jun 24 2019",
+      "extra": {
+        "date": "Jun 24 2019",
+        "custom_filename": "Jun242019_Affidavit of Service filed with respect to brief of amicus curiae of The National Fraternal Order of Police"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f"
+    }
+  }
+}

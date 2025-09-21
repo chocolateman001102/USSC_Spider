@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-481",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-481.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-481/89242/20190222133438815_Chamber%20NFIB%20Amicus%20Brief%20-%20to%20Printer.pdf",
+    "fetched_at": "2025-09-19T23:59:40.518548Z",
+    "sha256": "da9bdae8d4b4274594602561f06840b240f78bea399d921e9403058d34676261",
+    "filename": "Feb222019_Brief amici curiae of Chamber of Commerce of the United States of America, et al. filed.pdf",
+    "file_size_bytes": 219472,
+    "pages": 31,
+    "extraction": {
+      "method": "text",
+      "chars": 31,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Feb 22 2019",
+      "extra": {
+        "date": "Feb 22 2019",
+        "custom_filename": "Feb222019_Brief amici curiae of Chamber of Commerce of the United States of America, et al. filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

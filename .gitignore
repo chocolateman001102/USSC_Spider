@@ -48,11 +48,3 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
-
-# Project specific
-data/
-*.log
-logs/
-*.pdf
-*.json
-cases.jsonl

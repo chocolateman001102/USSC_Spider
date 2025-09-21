@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-877",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-877.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-877/117240/20190926175717089_Brief%20of%20Law%20Professors%20in%20Support%20of%20Respondents%20-%20Allen%20v%20Cooper.pdf",
+    "fetched_at": "2025-09-20T00:38:00.126647Z",
+    "sha256": "3abe7538f12fe2e1d2a36b34810b195190f97a7eebb38e321785f95ce7ee5425",
+    "filename": "Sep262019_Brief amici curiae of Law Professors filed.pdf",
+    "file_size_bytes": 344541,
+    "pages": 37,
+    "extraction": {
+      "method": "text",
+      "chars": 37,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Sep 26 2019",
+      "extra": {
+        "date": "Sep 26 2019",
+        "custom_filename": "Sep262019_Brief amici curiae of Law Professors filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

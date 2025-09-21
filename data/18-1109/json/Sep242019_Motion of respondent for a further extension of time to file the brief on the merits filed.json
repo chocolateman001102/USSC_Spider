@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1109",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-1109.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1109/116859/20190924155843933_AZAG%20Motion%20for%20Extension.pdf",
+    "fetched_at": "2025-09-20T01:10:52.332396Z",
+    "sha256": "978b364fed71adc00c28c47e67c69cb6bc95605ccc1ba3c5e9d180b364105511",
+    "filename": "Sep242019_Motion of respondent for a further extension of time to file the brief on the merits filed.pdf",
+    "file_size_bytes": 122165,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Sep 24 2019",
+      "extra": {
+        "date": "Sep 24 2019",
+        "custom_filename": "Sep242019_Motion of respondent for a further extension of time to file the brief on the merits filed"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}
