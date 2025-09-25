@@ -1,0 +1,35 @@
+{
+  "docket": "17-5554",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 0,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "brenda_g_bryn": {
+        "side": 1,
+        "role": "for petitioner"
+      },
+      "frederick_liu": {
+        "side": 0,
+        "role": "Assistant to the Solicitor General, US Department of Justice, for respondent"
+      }
+    },
+    "conversation_ids": [
+      "24620"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

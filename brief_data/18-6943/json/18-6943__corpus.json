@@ -1,0 +1,39 @@
+{
+  "docket": "18-6943",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "brian_t_burgess": {
+        "side": 1,
+        "role": "for the petitioner"
+      },
+      "kyle_d_hawkins": {
+        "side": 0,
+        "role": "for the respondent"
+      },
+      "benjamin_snyder": {
+        "side": 2,
+        "role": "Assistant to the Solicitor General, Department of Justice, for the United States, as amicus curiae, supporting the respondent"
+      }
+    },
+    "conversation_ids": [
+      "24943"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

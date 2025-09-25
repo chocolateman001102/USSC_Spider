@@ -1,0 +1,43 @@
+{
+  "docket": "18-281",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 0,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "paul_d_clement": {
+        "side": 1,
+        "role": "for the appellants"
+      },
+      "morgan_l_ratner": {
+        "side": 2,
+        "role": "Assistant to the Solicitor General, Department of Justice, for the United States, as amicus curiae, in support of neither party"
+      },
+      "toby_j_heytens": {
+        "side": 0,
+        "role": "Solicitor General of Virginia, for Appellees Virginia State Board of Elections et al."
+      },
+      "marc_e_elias": {
+        "side": 0,
+        "role": "for Appellees Golden Bethune-Hill et al."
+      }
+    },
+    "conversation_ids": [
+      "24808"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

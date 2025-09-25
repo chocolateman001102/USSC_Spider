@@ -1,0 +1,43 @@
+{
+  "docket": "18-966",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 0,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "noel_j_francisco": {
+        "side": 1,
+        "role": "Solicitor General, Department of Justice, for Petitioners"
+      },
+      "barbara_d_underwood": {
+        "side": 0,
+        "role": "on behalf of Respondents, New York, et al."
+      },
+      "dale_e_ho": {
+        "side": 0,
+        "role": "on behalf of Respondents, New York Immigration Coalition, et al."
+      },
+      "douglas_n_letter": {
+        "side": 2,
+        "role": "on behalf of the United States House of Representatives, as amicus curiae, in support of the Respondents"
+      }
+    },
+    "conversation_ids": [
+      "24830"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "docket": "18-1584",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "anthony_a_yang": {
+        "side": 1,
+        "role": "for the Petitioner"
+      },
+      "paul_d_clement": {
+        "side": 1,
+        "role": "for the Petitioner"
+      },
+      "michael_k_kellogg": {
+        "side": 0,
+        "role": "for the Respondents"
+      }
+    },
+    "conversation_ids": [
+      "24972"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

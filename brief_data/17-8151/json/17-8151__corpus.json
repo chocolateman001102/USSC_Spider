@@ -1,0 +1,35 @@
+{
+  "docket": "17-8151",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 0,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 0,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "robert_n_hochman": {
+        "side": 1,
+        "role": "for petitioner"
+      },
+      "d_john_sauer": {
+        "side": 0,
+        "role": "for respondents"
+      }
+    },
+    "conversation_ids": [
+      "24637"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

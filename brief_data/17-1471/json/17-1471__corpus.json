@@ -1,0 +1,35 @@
+{
+  "docket": "17-1471",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "william_p_barnette": {
+        "side": 1,
+        "role": "for the petitioner"
+      },
+      "f_paul_bland_jr": {
+        "side": 0,
+        "role": "for the respondent"
+      }
+    },
+    "conversation_ids": [
+      "24798"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

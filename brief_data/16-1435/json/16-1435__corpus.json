@@ -1,0 +1,35 @@
+{
+  "docket": "16-1435",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__anthony_m_kennedy": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1
+    },
+    "advocates": {
+      "j_david_breemer": {
+        "side": 1,
+        "role": "for petitioners"
+      },
+      "daniel_rogan": {
+        "side": 0,
+        "role": "for respondents"
+      }
+    },
+    "conversation_ids": [
+      "24561"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

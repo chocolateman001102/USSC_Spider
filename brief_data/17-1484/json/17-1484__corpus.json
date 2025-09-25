@@ -1,0 +1,34 @@
+{
+  "docket": "17-1484",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 0,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 0
+    },
+    "advocates": {
+      "edwin_s_kneedler": {
+        "side": 1,
+        "role": "Deputy Solicitor General, Department of Justice, for the petitioner"
+      },
+      "pratik_shah": {
+        "side": 0,
+        "role": "for the respondents"
+      }
+    },
+    "conversation_ids": [
+      "24795"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

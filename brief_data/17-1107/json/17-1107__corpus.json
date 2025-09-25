@@ -1,0 +1,33 @@
+{
+  "docket": "17-1107",
+  "utterence": null,
+  "meta": {
+    "win_side": null,
+    "votes_side": {},
+    "advocates": {
+      "lisa_s_blatt": {
+        "side": 1,
+        "role": "for the Petitioner"
+      },
+      "edwin_s_kneedler": {
+        "side": 2,
+        "role": "as amicus curiae, supporting the Petitioner"
+      },
+      "ian_h_gershengorn": {
+        "side": 0,
+        "role": "for the Respondent"
+      },
+      "riyaz_a_kanji": {
+        "side": 2,
+        "role": "as amicus curiae, supporting the Respondent"
+      }
+    },
+    "conversation_ids": [
+      "24780"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

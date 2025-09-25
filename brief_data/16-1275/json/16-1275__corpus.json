@@ -1,0 +1,39 @@
+{
+  "docket": "16-1275",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 0,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "charles_j_cooper": {
+        "side": 1,
+        "role": "for petitioners"
+      },
+      "noel_j_francisco": {
+        "side": 2,
+        "role": "Solicitor General, Department of Justice, for the United States as amicus curiae supporting petitioners"
+      },
+      "toby_j_heytens": {
+        "side": 0,
+        "role": "for respondents"
+      }
+    },
+    "conversation_ids": [
+      "24641"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

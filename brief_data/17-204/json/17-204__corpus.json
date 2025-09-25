@@ -1,0 +1,39 @@
+{
+  "docket": "17-204",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "daniel_m_wall": {
+        "side": 1,
+        "role": "for the Petitioner"
+      },
+      "noel_j_francisco": {
+        "side": 2,
+        "role": "as amicus curiae, supporting the Petitioner"
+      },
+      "david_c_frederick": {
+        "side": 0,
+        "role": "for the Respondents"
+      }
+    },
+    "conversation_ids": [
+      "24778"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

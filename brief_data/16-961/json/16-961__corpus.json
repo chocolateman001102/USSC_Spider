@@ -1,0 +1,39 @@
+{
+  "docket": "16-961",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 0,
+      "j__anthony_m_kennedy": 0,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 0,
+      "j__neil_gorsuch": 0
+    },
+    "advocates": {
+      "stephen_i_vladeck": {
+        "side": 1,
+        "role": "for petitioners"
+      },
+      "brian_h_fletcher": {
+        "side": 0,
+        "role": "Assistant to the Solicitor General, for respondent"
+      },
+      "aditya_bamzai": {
+        "side": 2,
+        "role": "as amicus curiae, in support of neither party"
+      }
+    },
+    "conversation_ids": [
+      "24558"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

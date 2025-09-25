@@ -1,0 +1,38 @@
+{
+  "docket": "17-1011",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 0,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1
+    },
+    "advocates": {
+      "jeffrey_l_fisher": {
+        "side": 1,
+        "role": "for petitioners"
+      },
+      "jonathan_ellis": {
+        "side": 2,
+        "role": "Assistant to the Solicitor General, Department of Justice, for the United States as amicus curiae supporting petitioners"
+      },
+      "donald_b_verrilli_jr": {
+        "side": 0,
+        "role": "for respondent"
+      }
+    },
+    "conversation_ids": [
+      "24626"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

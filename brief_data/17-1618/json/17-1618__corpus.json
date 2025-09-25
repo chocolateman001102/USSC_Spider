@@ -1,0 +1,39 @@
+{
+  "docket": "17-1618",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "pamela_s_karlan": {
+        "side": 1,
+        "role": "for the petitioner in 17-1618 and the respondent in 17-1623"
+      },
+      "jeffrey_m_harris": {
+        "side": 1,
+        "role": "for the respondent in 17-1618 and the petitioner in 17-1623"
+      },
+      "noel_j_francisco": {
+        "side": 2,
+        "role": "Solicitor General, Department of Justice, for the United States, as amicus curiae, supporting affirmance in 17-1618 and reversal in 17-1623"
+      }
+    },
+    "conversation_ids": [
+      "25053"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

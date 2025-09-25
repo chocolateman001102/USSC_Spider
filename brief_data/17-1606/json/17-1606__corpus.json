@@ -1,0 +1,39 @@
+{
+  "docket": "17-1606",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "michael_b_kimberly": {
+        "side": 1,
+        "role": "for the petitioner"
+      },
+      "michael_r_huston": {
+        "side": 2,
+        "role": "Assistant to the Solicitor General, Department of Justice, for the United States, as amicus curiae, in support of reversal and remand"
+      },
+      "deepak_gupta": {
+        "side": 2,
+        "role": "Court-appointed amicus curiae in support of the judgment below"
+      }
+    },
+    "conversation_ids": [
+      "24809"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

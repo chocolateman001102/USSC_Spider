@@ -1,0 +1,29 @@
+{
+  "docket": "18-217",
+  "utterence": null,
+  "meta": {
+    "win_side": null,
+    "votes_side": {},
+    "advocates": {
+      "toby_j_heytens": {
+        "side": 1,
+        "role": "On behalf of the Petitioner"
+      },
+      "eric_j_feigin": {
+        "side": 2,
+        "role": "For the United States, as amicus curiae, supporting the Petitioner"
+      },
+      "danielle_spinelli": {
+        "side": 0,
+        "role": "On behalf of the Respondent"
+      }
+    },
+    "conversation_ids": [
+      "25042"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "docket": "16-111",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__anthony_m_kennedy": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 0,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1
+    },
+    "advocates": {
+      "kristen_kellie_waggoner": {
+        "side": 1,
+        "role": "for petitioners"
+      },
+      "noel_j_francisco": {
+        "side": 2,
+        "role": "Solicitor General, US Department of Justice, for the United States as amicus curiae supporting petitioners"
+      },
+      "frederick_r_yarger": {
+        "side": 0,
+        "role": "for state respondents"
+      },
+      "david_d_cole": {
+        "side": 0,
+        "role": "for private respondents"
+      }
+    },
+    "conversation_ids": [
+      "24402"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

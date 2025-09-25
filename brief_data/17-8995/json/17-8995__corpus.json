@@ -1,0 +1,35 @@
+{
+  "docket": "17-8995",
+  "utterence": null,
+  "meta": {
+    "win_side": 0,
+    "votes_side": {
+      "j__john_g_roberts_jr": 0,
+      "j__clarence_thomas": 0,
+      "j__ruth_bader_ginsburg": 0,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 0,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 0
+    },
+    "advocates": {
+      "vanessa_f_malone": {
+        "side": 1,
+        "role": "for the petitioner"
+      },
+      "jenny_ellickson": {
+        "side": 0,
+        "role": "Assistant to the Solicitor General, Department of Justice, for the respondent"
+      }
+    },
+    "conversation_ids": [
+      "24807"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

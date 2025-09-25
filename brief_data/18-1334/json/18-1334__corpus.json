@@ -1,0 +1,43 @@
+{
+  "docket": "18-1334",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "donald_b_verrilli_jr": {
+        "side": 1,
+        "role": "inferred"
+      },
+      "jeffrey_b_wall": {
+        "side": 3,
+        "role": "inferred"
+      },
+      "theodore_b_olson": {
+        "side": 3,
+        "role": "inferred"
+      },
+      "jessica_e_mendez-colberg": {
+        "side": 3,
+        "role": "inferred"
+      }
+    },
+    "conversation_ids": [
+      "25052"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

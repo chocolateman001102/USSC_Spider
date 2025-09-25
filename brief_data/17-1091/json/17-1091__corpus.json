@@ -1,0 +1,35 @@
+{
+  "docket": "17-1091",
+  "utterence": null,
+  "meta": {
+    "win_side": 1,
+    "votes_side": {
+      "j__john_g_roberts_jr": 1,
+      "j__clarence_thomas": 1,
+      "j__ruth_bader_ginsburg": 1,
+      "j__stephen_g_breyer": 1,
+      "j__samuel_a_alito_jr": 1,
+      "j__sonia_sotomayor": 1,
+      "j__elena_kagan": 1,
+      "j__neil_gorsuch": 1,
+      "j__brett_m_kavanaugh": 1
+    },
+    "advocates": {
+      "wesley_p_hottot": {
+        "side": 1,
+        "role": "for the Petitioner"
+      },
+      "thomas_m_fisher": {
+        "side": 0,
+        "role": "for the Respondent"
+      }
+    },
+    "conversation_ids": [
+      "24777"
+    ]
+  },
+  "source": {
+    "corpus": "convokit supreme-corpus",
+    "docs": "https://convokit.cornell.edu/documentation/supreme.html"
+  }
+}

@@ -19,7 +19,7 @@ Crawler (JSON only, SCOTUS)：读取 JSON/JSONL -> 命中 SCOTUS docket 页面 -
     pip install requests beautifulsoup4 lxml pymupdf
     # 可选：更高质量文本抽取
     pip install pdfminer.six
-    # 可选：OCR（本机需装 ocrmypdf/tesseract）
+    # 可选 OCR
 
 输出目录
     {output}/pdf/YYYY/MM/{query}_{hash8}.pdf
