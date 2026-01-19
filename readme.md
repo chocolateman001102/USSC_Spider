@@ -4,10 +4,10 @@ A Python tool for downloading legal briefs from the US Supreme Court and analyzi
 
 ## Features
 
-- 📥 Downloads PDF briefs and replies from SCOTUS docket pages
-- 📄 Extracts text content from PDFs (supports OCR for scanned documents)
-- 🧠 Computes semantic similarity using neural embeddings (Sentence-Transformers)
-- 📊 Outputs structured JSON metadata and similarity scores
+- Downloads PDF briefs and replies from SCOTUS docket pages
+- Extracts text content from PDFs (supports OCR for scanned documents)
+- Computes semantic similarity using neural embeddings (Sentence-Transformers)
+- Outputs structured JSON metadata and similarity scores
 
 ---
 
@@ -46,7 +46,7 @@ python3 scripts/crawler.py \
 
 ```bash
 # Analyze all cases
-python3 scripts/process_similarity.py --all-cases --output "results.jsonl"
+python3 scripts/process_similarity.py --all-cases
 
 # Or specific cases
 python3 scripts/process_similarity.py --cases 17-773 17-21 --output "results.jsonl"
@@ -144,17 +144,6 @@ python3 scripts/process_similarity.py --all-cases --chunk-size 1500 --overlap 30
 ```
 
 **Key metric:** `avg_brief_oral_cosine` (0-1, higher = more similar)
-
-### Expected Runtime
-- **Default model** (`all-MiniLM-L6-v2`):
-  - Single case: ~10-30 seconds
-  - All 188 cases: ~30-90 minutes
-  
-- **High-quality model** (`all-mpnet-base-v2`):
-  - Single case: ~20-60 seconds
-  - All 188 cases: ~60-120 minutes
-
----
 
 ## How It Works
 
