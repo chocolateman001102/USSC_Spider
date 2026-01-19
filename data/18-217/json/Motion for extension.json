@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-217",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-217.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-217/92580/20190320155251826_Mathena%20v.%20Malvo%20extension%20request.pdf",
+    "fetched_at": "2026-01-17T21:08:36.221761Z",
+    "sha256": "f928de8e292bd672472b45ca20b9ee9fc5f68c37953a21614ff915c16a66578d",
+    "filename": "Motion for extension.pdf",
+    "file_size_bytes": 42576,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 20 2019",
+      "extra": {
+        "date": "Mar 20 2019",
+        "custom_filename": "Motion for extension"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

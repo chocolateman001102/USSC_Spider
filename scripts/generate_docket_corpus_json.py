@@ -8,7 +8,8 @@ CORPUS_DIR = os.path.join(REPO_ROOT, "supreme-corpus")
 UTTERANCES_PATH = os.path.join(CORPUS_DIR, "utterances.jsonl")
 CONVERSATIONS_PATH = os.path.join(CORPUS_DIR, "conversations.json")
 SPEAKERS_PATH = os.path.join(CORPUS_DIR, "speakers.json")
-BRIEF_DATA_DIR = os.path.join(REPO_ROOT, "brief_data")
+BRIEF_DATA_DIR = os.path.join(REPO_ROOT, "data")  # Changed from "brief_data" to "data"
+
 
 
 def load_json(path: str):

@@ -10,10 +10,7 @@ Crawler (JSON only, SCOTUS)：读取 JSON/JSONL -> 命中 SCOTUS docket 页面 -
 - 文本抽取优先 pdfminer.six；若缺失则回退 PyMuPDF；必要时可启用 OCR 兜底
 
 用法
-    python crawler_pdf_to_json.py \
-      --queries-json cases.jsonl \
-      --output-dir ./data \
-      --site scotus
+
 
 依赖（最小集）
     pip install requests beautifulsoup4 lxml pymupdf
@@ -153,6 +150,79 @@ def sanitize_filename(filename: str) -> str:
     if len(filename) > 200:
         filename = filename[:200]
     return filename.strip()
+
+
+def extract_party_names(text: str) -> str:
+    """从文档描述中提取当事人名称，用于生成简短文件名。
+    
+    示例:
+        "Brief of petitioners Masterpiece Cakeshop, et al. filed" -> "Masterpiece Cakeshop"
+        "Reply of respondent Securities and Exchange Commission filed" -> "SEC"
+        "Brief of amicus curiae American Civil Liberties Union" -> "ACLU"
+    """
+    if not text:
+        return "Unknown"
+    
+    text = text.strip()
+    
+    # 常见缩写映射
+    abbreviations = {
+        'Securities and Exchange Commission': 'SEC',
+        'Federal Trade Commission': 'FTC',
+        'American Civil Liberties Union': 'ACLU',
+        'National Association for the Advancement of Colored People': 'NAACP',
+        'United States': 'US',
+        'et al': '',
+        'et al.': '',
+    }
+    
+    # 提取模式：寻找 "of [petitioner/respondent/amicus] PARTY_NAME"
+    patterns = [
+        r'(?:brief|reply)\s+of\s+(?:petitioners?|respondents?)\s+(.+?)(?:\s+filed|\s*$)',
+        r'(?:brief|reply)\s+for\s+(?:petitioners?|respondents?)\s+(.+?)(?:\s+filed|\s*$)',
+        r'(?:brief|reply)\s+of\s+amicus\s+curiae\s+(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
+        r'(?:brief|reply)\s+for\s+amicus\s+curiae\s+(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
+        r'(?:brief|reply)\s+of\s+(.+?)(?:\s+as\s+amicus\s+curiae|\s+filed|\s*$)',
+    ]
+    
+    party_name = None
+    
+    # 使用原始文本进行匹配以保留大小写
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            party_name = match.group(1).strip()
+            break
+    
+    if not party_name:
+        # 如果没有匹配到，返回清理后的前几个词
+        words = text.split()[:5]
+        party_name = ' '.join(words)
+    
+    # 应用缩写
+    for full_name, abbr in abbreviations.items():
+        if full_name.lower() in party_name.lower():
+            party_name = re.sub(full_name, abbr, party_name, flags=re.IGNORECASE)
+    
+    # 清理 "et al", "et al.", 逗号等
+    party_name = re.sub(r',?\s*et\s+al\.?', '', party_name, flags=re.IGNORECASE)
+    party_name = re.sub(r'\s*,\s*', ' ', party_name)  # 移除逗号
+    party_name = re.sub(r'\s+', ' ', party_name).strip()
+    
+    # 限制长度，取前3个有意义的词
+    words = [w for w in party_name.split() if len(w) > 2 or w.isupper()]
+    if len(words) > 3:
+        party_name = ' '.join(words[:3])
+    else:
+        party_name = ' '.join(words) if words else party_name
+    
+    # 清理并限制总长度
+    party_name = sanitize_filename(party_name)
+    if len(party_name) > 50:
+        party_name = party_name[:50].strip()
+    
+    return party_name if party_name else "Unknown"
+
 
 # ----------------------------- 下载器 -----------------------------
 
@@ -423,36 +493,12 @@ class ScotusDocketAdapter(SiteAdapter):
                 
                 full_url = href if href.startswith('http') else f"{self.base_url}{href if href.startswith('/') else '/' + href}"
                 title_text = desc or parent_text
-                # 创建自定义文件名：date_name
-                formatted_date = format_date_for_filename(date_text)
-                logging.debug('Original parent_text: "%s"', parent_text)
                 
-                # 更精确地提取文档描述：找到 <br> 标签之前的内容
-                clean_title = parent_text
-                # 如果包含 <br> 标签，只取之前的部分
-                if '<br' in clean_title:
-                    clean_title = clean_title.split('<br')[0]
+                # 提取当事人名称作为文件名
+                party_name = extract_party_names(parent_text)
+                logging.info('Extracted party name: "%s" from "%s"', party_name, parent_text[:100])
                 
-                # 移除所有链接相关的文本
-                link_patterns = [
-                    r'Main Document',
-                    r'Certificate of Word Count', 
-                    r'Proof of Service',
-                    r'Other',
-                    r'\(Distributed\)',
-                    r'<span[^>]*>.*?</span>',  # 移除span标签及其内容
-                    r'<a[^>]*>.*?</a>',  # 移除a标签及其内容
-                ]
-                
-                for pattern in link_patterns:
-                    clean_title = re.sub(pattern, '', clean_title, flags=re.IGNORECASE)
-                
-                # 清理多余的空格、换行和特殊字符
-                clean_title = re.sub(r'\s+', ' ', clean_title).strip()
-                clean_title = clean_title.strip('.,;:')
-                clean_title = sanitize_filename(clean_title)
-                
-                custom_filename = f"{formatted_date}_{clean_title}"
+                custom_filename = party_name
                 logging.info('Generated filename: "%s"', custom_filename)
                 docs.append(ResolvedDoc(query_code, final_url, full_url, title_text, None, {
                     "date": date_text,
@@ -505,8 +551,11 @@ def build_adapter(site_key: str, session: requests.Session, base_url: Optional[s
 
 
 def init_logger(out_dir: Path) -> None:
-    ensure_dir(out_dir / 'logs')
-    log_path = out_dir / 'logs' / 'app.log'
+    # Write logs to output/logs/ instead of data/logs/
+    project_root = Path(__file__).resolve().parents[1]
+    output_logs_dir = project_root / 'output' / 'logs'
+    ensure_dir(output_logs_dir)
+    log_path = output_logs_dir / 'scraper_output.log'
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s %(levelname)s %(name)s %(message)s',
@@ -622,6 +671,7 @@ def main() -> None:
     ap.add_argument('--user-agent', type=str, default='crawler-pdf-json/1.0')
     ap.add_argument('--min-interval', type=float, default=1.0)
     ap.add_argument('--enable-ocr', type=int, default=0)
+    ap.add_argument('--min-year', type=int, default=1900, help='最小年份过滤（默认1900，设为0则不过滤）')
     args = ap.parse_args()
 
     ensure_dir(args.output_dir)
@@ -647,18 +697,19 @@ def main() -> None:
         if not re.match(r'^[0-9]{2}-[0-9]+$', code):
             logging.info('SKIP unsupported docket format: %s', code)
             continue
-        # 仅保留 2000 年及之后的案件（根据两位年份映射到完整年份）
-        try:
-            yy = int(code.split('-', 1)[0])
-            current_yy = int(dt.datetime.utcnow().strftime('%y'))
-            # 两位年份到完整年份：小于等于当前两位年视为 2000+yy，否则视为 1900+yy
-            full_year = 2000 + yy if yy <= current_yy else 1900 + yy
-            if full_year < 2001:
-                logging.info('SKIP pre-2000 docket: %s (year=%d)', code, full_year)
+        # 年份过滤（可配置）
+        if args.min_year > 0:
+            try:
+                yy = int(code.split('-', 1)[0])
+                current_yy = int(dt.datetime.utcnow().strftime('%y'))
+                # 两位年份到完整年份：小于等于当前两位年视为 2000+yy，否则视为 1900+yy
+                full_year = 2000 + yy if yy <= current_yy else 1900 + yy
+                if full_year < args.min_year:
+                    logging.info('SKIP docket before %d: %s (year=%d)', args.min_year, code, full_year)
+                    continue
+            except Exception:
+                logging.info('SKIP due to year parse error: %s', code)
                 continue
-        except Exception:
-            logging.info('SKIP due to year parse error: %s', code)
-            continue
         tasks.append(code)
 
     stats = RunStats(total=len(tasks))

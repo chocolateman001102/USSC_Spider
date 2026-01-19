@@ -1,2 +1,0 @@
-{"case": "17-773", "num_brief_docs": 5, "num_candidate_brief_files": 5, "num_empty_brief_files": 0, "num_brief_chunks": 42, "num_oral_chunks": 11, "avg_brief_oral_cosine": 0.06529552006328343, "empty_brief_samples": []}
-{"case": "17-21", "num_brief_docs": 10, "num_candidate_brief_files": 10, "num_empty_brief_files": 0, "num_brief_chunks": 67, "num_oral_chunks": 11, "avg_brief_oral_cosine": 0.06349912053679915, "empty_brief_samples": []}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-204",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-204.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-204/51220/20180625142438402_2018-06-25%20No-%2017-204%20Apple%20v.pdf",
+    "fetched_at": "2026-01-17T19:43:03.428278Z",
+    "sha256": "0ce6b632cb4c351d8edce8f15ed1d97bd44d0e260c95c07cd2d3005f5d8e195b",
+    "filename": "Motion for extension.pdf",
+    "file_size_bytes": 1104980,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jun 25 2018",
+      "extra": {
+        "date": "Jun 25 2018",
+        "custom_filename": "Motion for extension"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

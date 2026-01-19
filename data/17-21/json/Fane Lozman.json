@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-21",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-21.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-21/35653/20180216120140682_17-21rb.pdf",
+    "fetched_at": "2026-01-17T19:26:09.033122Z",
+    "sha256": "cf70ad88821445f7cd7f1d02a318cb15694ede124adc4bee07aa8d97fd6c97bc",
+    "filename": "Fane Lozman.pdf",
+    "file_size_bytes": 4982073,
+    "pages": 30,
+    "extraction": {
+      "method": "text",
+      "chars": 39,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Feb 16 2018",
+      "extra": {
+        "date": "Feb 16 2018",
+        "custom_filename": "Fane Lozman"
+      }
+    },
+    "content": {
+      "page_text": [
+        "IN THE"
+      ],
+      "full_text": "IN THE \n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

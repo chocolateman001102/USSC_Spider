@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1195",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-1195.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1195/108995/20190723133808683_MDOR%20Motion%20for%20Extension%20of%20Time_072319.pdf",
+    "fetched_at": "2026-01-17T20:50:21.905615Z",
+    "sha256": "b32b24177e011da0cd65c1d7f0733b3a07614acfe81f3059ea9c77cb6e272da2",
+    "filename": "Motion for extension.pdf",
+    "file_size_bytes": 178816,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 23 2019",
+      "extra": {
+        "date": "Jul 23 2019",
+        "custom_filename": "Motion for extension"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

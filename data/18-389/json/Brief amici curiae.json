@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-389",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-389.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-389/89921/20190227151848327_Freeport%20Amicus%20Parker%20Drilling%20v.%20Newton.pdf",
+    "fetched_at": "2026-01-17T20:16:23.362974Z",
+    "sha256": "af60d7a7856d14511c6a44737fa11d5dcbf6f1fd7e5ac63c2f0496b15000d26b",
+    "filename": "Brief amici curiae.pdf",
+    "file_size_bytes": 309497,
+    "pages": 46,
+    "extraction": {
+      "method": "text",
+      "chars": 46,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Feb 27 2019",
+      "extra": {
+        "date": "Feb 27 2019",
+        "custom_filename": "Brief amici curiae"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

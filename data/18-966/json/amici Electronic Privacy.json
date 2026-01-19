@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-966",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/18-966.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-966/95053/20190402101111593_18-966%20bsac%20Electronic%20Privacy%20Information%20Center%20Certificate%20of%20Service.pdf",
+    "fetched_at": "2026-01-17T19:49:45.110881Z",
+    "sha256": "cd0f9c0e65535d260dde9fa12a32ddb3e6255f431e50efdb1e1a7a40f7b7ca59",
+    "filename": "amici Electronic Privacy.pdf",
+    "file_size_bytes": 867432,
+    "pages": 2,
+    "extraction": {
+      "method": "text",
+      "chars": 2,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 01 2019",
+      "extra": {
+        "date": "Apr 01 2019",
+        "custom_filename": "amici Electronic Privacy"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-1077",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1077.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-1077/56071/20180731171757533_Letter%20requesting%20extension%20072618.pdf",
+    "fetched_at": "2026-01-17T20:07:53.048050Z",
+    "sha256": "2221b806bd192774c5b1a2e0374c03146a917cd2a077e2b5647480e98dc7131b",
+    "filename": "Motion for extension.pdf",
+    "file_size_bytes": 41918,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 31 2018",
+      "extra": {
+        "date": "Jul 31 2018",
+        "custom_filename": "Motion for extension"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

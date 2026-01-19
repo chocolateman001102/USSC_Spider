@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-1026",
+    "source_page_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1026.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-1026/50803/20180621094704381_Garza%20-%20Letter%20from%20A.%20Ali%20to%20S.%20Harris%20re%20Briefing%20Schedule.pdf",
+    "fetched_at": "2026-01-17T19:57:04.504125Z",
+    "sha256": "d4fbad44240577b2cf5acaf106ce50cc5aa7243f24bbb52db0952c68551ee13f",
+    "filename": "Motion for extension.pdf",
+    "file_size_bytes": 152475,
+    "pages": 1,
+    "extraction": {
+      "method": "text",
+      "chars": 1,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jun 21 2018",
+      "extra": {
+        "date": "Jun 21 2018",
+        "custom_filename": "Motion for extension"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f"
+    }
+  }
+}

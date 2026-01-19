@@ -1,0 +1,188 @@
+{"case": "15-1439", "num_brief_docs": 2, "num_brief_chunks": 13, "num_oral_chunks": 23, "avg_brief_oral_cosine": 0.6756913065910339}
+{"case": "16-1011", "num_brief_docs": 4, "num_brief_chunks": 62, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6252033114433289}
+{"case": "16-1017", "error": "missing corpus json"}
+{"case": "16-1027", "num_brief_docs": 3, "num_brief_chunks": 47, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6108506321907043}
+{"case": "16-1067", "num_brief_docs": 1, "num_brief_chunks": 9, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6781226396560669}
+{"case": "16-1094", "num_brief_docs": 3, "num_brief_chunks": 61, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5824886560440063}
+{"case": "16-111", "num_brief_docs": 1, "num_brief_chunks": 12, "num_oral_chunks": 29, "avg_brief_oral_cosine": 0.5771554112434387}
+{"case": "16-1140", "num_brief_docs": 4, "num_brief_chunks": 68, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5644620060920715}
+{"case": "16-1144", "num_brief_docs": 1, "num_brief_chunks": 12, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5852763056755066}
+{"case": "16-1150", "num_brief_docs": 3, "num_brief_chunks": 54, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5922521948814392}
+{"case": "16-1215", "num_brief_docs": 3, "num_brief_chunks": 81, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6102014183998108}
+{"case": "16-1220", "num_brief_docs": 3, "num_brief_chunks": 53, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6052002906799316}
+{"case": "16-1275", "num_brief_docs": 3, "num_brief_chunks": 52, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.615760087966919}
+{"case": "16-1348", "num_brief_docs": 3, "num_brief_chunks": 51, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6108831763267517}
+{"case": "16-1362", "num_brief_docs": 3, "num_brief_chunks": 56, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5583552122116089}
+{"case": "16-1363", "num_brief_docs": 3, "num_brief_chunks": 55, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6279593706130981}
+{"case": "16-1371", "num_brief_docs": 3, "num_brief_chunks": 44, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6019338369369507}
+{"case": "16-1423", "error": "missing corpus json"}
+{"case": "16-1432", "num_brief_docs": 3, "num_brief_chunks": 58, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5469712018966675}
+{"case": "16-1435", "num_brief_docs": 3, "num_brief_chunks": 74, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5852781534194946}
+{"case": "16-1454", "num_brief_docs": 5, "num_brief_chunks": 97, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6231682896614075}
+{"case": "16-1466", "num_brief_docs": 4, "num_brief_chunks": 81, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5584244728088379}
+{"case": "16-1495", "num_brief_docs": 3, "num_brief_chunks": 52, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6578059792518616}
+{"case": "16-1498", "num_brief_docs": 3, "num_brief_chunks": 111, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.5316808223724365}
+{"case": "16-1519", "num_brief_docs": 3, "num_brief_chunks": 51, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6075878143310547}
+{"case": "16-476", "num_brief_docs": 1, "num_brief_chunks": 13, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6662855744361877}
+{"case": "16-534", "num_brief_docs": 1, "num_brief_chunks": 12, "num_oral_chunks": 13, "avg_brief_oral_cosine": 0.6495769619941711}
+{"case": "16-712", "num_brief_docs": 1, "num_brief_chunks": 12, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6573801636695862}
+{"case": "16-8255", "num_brief_docs": 4, "num_brief_chunks": 75, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5635278820991516}
+{"case": "16-9493", "num_brief_docs": 3, "num_brief_chunks": 39, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5947012305259705}
+{"case": "16-961", "num_brief_docs": 2, "num_brief_chunks": 50, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6269993782043457}
+{"case": "17-1011", "num_brief_docs": 3, "num_brief_chunks": 60, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.610551655292511}
+{"case": "17-1026", "num_brief_docs": 4, "num_brief_chunks": 57, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6505587100982666}
+{"case": "17-1042", "num_brief_docs": 4, "num_brief_chunks": 77, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5558518767356873}
+{"case": "17-1077", "num_brief_docs": 4, "num_brief_chunks": 58, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5924041271209717}
+{"case": "17-1091", "num_brief_docs": 4, "num_brief_chunks": 65, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5782453417778015}
+{"case": "17-1094", "num_brief_docs": 3, "num_brief_chunks": 69, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.5981215238571167}
+{"case": "17-1104", "num_brief_docs": 5, "num_brief_chunks": 140, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5032901763916016}
+{"case": "17-1106", "error": "missing corpus json"}
+{"case": "17-1107", "num_brief_docs": 6, "num_brief_chunks": 51, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6339046955108643}
+{"case": "17-1174", "num_brief_docs": 3, "num_brief_chunks": 28, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5220701694488525}
+{"case": "17-1184", "num_brief_docs": 3, "num_brief_chunks": 51, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6042899489402771}
+{"case": "17-1201", "num_brief_docs": 2, "num_brief_chunks": 35, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6346046328544617}
+{"case": "17-1229", "num_brief_docs": 3, "num_brief_chunks": 58, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6173685789108276}
+{"case": "17-1268", "num_brief_docs": 3, "num_brief_chunks": 54, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6198290586471558}
+{"case": "17-1272", "num_brief_docs": 2, "num_brief_chunks": 32, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6253603100776672}
+{"case": "17-1299", "num_brief_docs": 3, "num_brief_chunks": 46, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6357880234718323}
+{"case": "17-130", "num_brief_docs": 4, "num_brief_chunks": 48, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5817112922668457}
+{"case": "17-1307", "num_brief_docs": 3, "num_brief_chunks": 62, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6257147789001465}
+{"case": "17-1364", "error": "missing corpus json"}
+{"case": "17-1471", "num_brief_docs": 3, "num_brief_chunks": 63, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6070584058761597}
+{"case": "17-1484", "num_brief_docs": 3, "num_brief_chunks": 61, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.5980788469314575}
+{"case": "17-1498", "num_brief_docs": 3, "num_brief_chunks": 84, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5496575236320496}
+{"case": "17-155", "num_brief_docs": 3, "num_brief_chunks": 68, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5768675804138184}
+{"case": "17-1594", "num_brief_docs": 3, "num_brief_chunks": 58, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5867545008659363}
+{"case": "17-1606", "num_brief_docs": 4, "num_brief_chunks": 75, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6459391713142395}
+{"case": "17-1618", "num_brief_docs": 7, "num_brief_chunks": 120, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.598294198513031}
+{"case": "17-1623", "error": "missing corpus json"}
+{"case": "17-1625", "num_brief_docs": 3, "num_brief_chunks": 51, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6268198490142822}
+{"case": "17-1657", "num_brief_docs": 3, "num_brief_chunks": 63, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6003939509391785}
+{"case": "17-1660", "error": "missing corpus json"}
+{"case": "17-1672", "num_brief_docs": 3, "num_brief_chunks": 53, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5968441963195801}
+{"case": "17-1678", "num_brief_docs": 3, "num_brief_chunks": 43, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5691530108451843}
+{"case": "17-1679", "error": "missing corpus json"}
+{"case": "17-1702", "num_brief_docs": 4, "num_brief_chunks": 72, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.5493435263633728}
+{"case": "17-1705", "num_brief_docs": 3, "num_brief_chunks": 45, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.56583571434021}
+{"case": "17-1712", "num_brief_docs": 3, "num_brief_chunks": 75, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.5570592880249023}
+{"case": "17-1717", "num_brief_docs": 6, "num_brief_chunks": 94, "num_oral_chunks": 26, "avg_brief_oral_cosine": 0.586525559425354}
+{"case": "17-2", "num_brief_docs": 3, "num_brief_chunks": 70, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.5657578706741333}
+{"case": "17-204", "num_brief_docs": 4, "num_brief_chunks": 58, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6615642309188843}
+{"case": "17-21", "num_brief_docs": 3, "num_brief_chunks": 39, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5677916407585144}
+{"case": "17-269", "num_brief_docs": 5, "num_brief_chunks": 102, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.6357147097587585}
+{"case": "17-290", "num_brief_docs": 3, "num_brief_chunks": 69, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6021431684494019}
+{"case": "17-312", "num_brief_docs": 4, "num_brief_chunks": 81, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5456885099411011}
+{"case": "17-333", "num_brief_docs": 3, "num_brief_chunks": 55, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6270346641540527}
+{"case": "17-340", "num_brief_docs": 5, "num_brief_chunks": 70, "num_oral_chunks": 15, "avg_brief_oral_cosine": 0.5946994423866272}
+{"case": "17-368", "error": "missing corpus json"}
+{"case": "17-387", "num_brief_docs": 3, "num_brief_chunks": 51, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6475707292556763}
+{"case": "17-419", "num_brief_docs": 2, "num_brief_chunks": 37, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6539662480354309}
+{"case": "17-43", "num_brief_docs": 3, "num_brief_chunks": 61, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5953100919723511}
+{"case": "17-432", "num_brief_docs": 3, "num_brief_chunks": 49, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6318269968032837}
+{"case": "17-459", "num_brief_docs": 3, "num_brief_chunks": 88, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5771825909614563}
+{"case": "17-467", "error": "missing corpus json"}
+{"case": "17-494", "num_brief_docs": 4, "num_brief_chunks": 68, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.5986059904098511}
+{"case": "17-515", "error": "missing corpus json"}
+{"case": "17-530", "num_brief_docs": 3, "num_brief_chunks": 64, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5448228120803833}
+{"case": "17-532", "num_brief_docs": 3, "num_brief_chunks": 55, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6606298089027405}
+{"case": "17-5554", "num_brief_docs": 3, "num_brief_chunks": 49, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.620851457118988}
+{"case": "17-5639", "num_brief_docs": 4, "num_brief_chunks": 59, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6245505213737488}
+{"case": "17-571", "num_brief_docs": 5, "num_brief_chunks": 62, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6381725668907166}
+{"case": "17-5716", "num_brief_docs": 2, "num_brief_chunks": 48, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6309362649917603}
+{"case": "17-586", "num_brief_docs": 6, "num_brief_chunks": 95, "num_oral_chunks": 24, "avg_brief_oral_cosine": 0.6451382637023926}
+{"case": "17-587", "num_brief_docs": 4, "num_brief_chunks": 63, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.5602647066116333}
+{"case": "17-6086", "num_brief_docs": 4, "num_brief_chunks": 68, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6058411598205566}
+{"case": "17-646", "num_brief_docs": 4, "num_brief_chunks": 64, "num_oral_chunks": 26, "avg_brief_oral_cosine": 0.5924255847930908}
+{"case": "17-647", "num_brief_docs": 4, "num_brief_chunks": 30, "num_oral_chunks": 39, "avg_brief_oral_cosine": 0.6063669919967651}
+{"case": "17-654", "error": "missing corpus json"}
+{"case": "17-71", "num_brief_docs": 9, "num_brief_chunks": 131, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6110361218452454}
+{"case": "17-742", "error": "missing corpus json"}
+{"case": "17-7505", "num_brief_docs": 3, "num_brief_chunks": 43, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.628049910068512}
+{"case": "17-765", "num_brief_docs": 3, "num_brief_chunks": 55, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6075150966644287}
+{"case": "17-773", "num_brief_docs": 2, "num_brief_chunks": 21, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6375977993011475}
+{"case": "17-778", "num_brief_docs": 3, "num_brief_chunks": 49, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.620654284954071}
+{"case": "17-8151", "num_brief_docs": 4, "num_brief_chunks": 67, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5957863926887512}
+{"case": "17-834", "num_brief_docs": 4, "num_brief_chunks": 102, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6032673716545105}
+{"case": "17-8995", "num_brief_docs": 3, "num_brief_chunks": 42, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.633717954158783}
+{"case": "17-949", "num_brief_docs": 4, "num_brief_chunks": 72, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6496054530143738}
+{"case": "17-9560", "num_brief_docs": 3, "num_brief_chunks": 63, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.570557713508606}
+{"case": "17-9572", "num_brief_docs": 4, "num_brief_chunks": 57, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6225855350494385}
+{"case": "17-961", "num_brief_docs": 9, "num_brief_chunks": 63, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5612502098083496}
+{"case": "17-965", "num_brief_docs": 5, "num_brief_chunks": 121, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.5263088941574097}
+{"case": "17-988", "num_brief_docs": 4, "num_brief_chunks": 66, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6261467337608337}
+{"case": "18-1023", "num_brief_docs": 6, "num_brief_chunks": 104, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5661576390266418}
+{"case": "18-1048", "num_brief_docs": 3, "num_brief_chunks": 67, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5672619342803955}
+{"case": "18-1059", "num_brief_docs": 6, "num_brief_chunks": 84, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5922633409500122}
+{"case": "18-107", "num_brief_docs": 8, "num_brief_chunks": 184, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5593990087509155}
+{"case": "18-1086", "num_brief_docs": 3, "num_brief_chunks": 57, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.637744665145874}
+{"case": "18-1109", "num_brief_docs": 4, "num_brief_chunks": 49, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6305415034294128}
+{"case": "18-1116", "num_brief_docs": 3, "num_brief_chunks": 45, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6451685428619385}
+{"case": "18-1150", "num_brief_docs": 5, "num_brief_chunks": 61, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6018412113189697}
+{"case": "18-1165", "num_brief_docs": 4, "num_brief_chunks": 63, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5969016551971436}
+{"case": "18-1171", "num_brief_docs": 3, "num_brief_chunks": 47, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5817364454269409}
+{"case": "18-1195", "num_brief_docs": 3, "num_brief_chunks": 68, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6315140724182129}
+{"case": "18-1233", "num_brief_docs": 4, "num_brief_chunks": 74, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.558057427406311}
+{"case": "18-1269", "num_brief_docs": 2, "num_brief_chunks": 49, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6330412030220032}
+{"case": "18-1323", "num_brief_docs": 5, "num_brief_chunks": 110, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6109364032745361}
+{"case": "18-1334", "num_brief_docs": 10, "num_brief_chunks": 165, "num_oral_chunks": 27, "avg_brief_oral_cosine": 0.5882956981658936}
+{"case": "18-1432", "num_brief_docs": 3, "num_brief_chunks": 62, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6501564383506775}
+{"case": "18-15", "num_brief_docs": 3, "num_brief_chunks": 63, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5675008296966553}
+{"case": "18-1501", "num_brief_docs": 4, "num_brief_chunks": 67, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6043891906738281}
+{"case": "18-1584", "num_brief_docs": 6, "num_brief_chunks": 123, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6621732711791992}
+{"case": "18-217", "num_brief_docs": 3, "num_brief_chunks": 58, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.606738269329071}
+{"case": "18-260", "num_brief_docs": 3, "num_brief_chunks": 62, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.5873543620109558}
+{"case": "18-266", "num_brief_docs": 3, "num_brief_chunks": 53, "num_oral_chunks": 15, "avg_brief_oral_cosine": 0.6504523754119873}
+{"case": "18-272", "error": "missing corpus json"}
+{"case": "18-281", "num_brief_docs": 4, "num_brief_chunks": 72, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6317026615142822}
+{"case": "18-302", "num_brief_docs": 3, "num_brief_chunks": 56, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.538038432598114}
+{"case": "18-315", "num_brief_docs": 3, "num_brief_chunks": 59, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5798035264015198}
+{"case": "18-328", "num_brief_docs": 4, "num_brief_chunks": 51, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6161747574806213}
+{"case": "18-389", "num_brief_docs": 3, "num_brief_chunks": 59, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6001566052436829}
+{"case": "18-422", "num_brief_docs": 4, "num_brief_chunks": 80, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6126686930656433}
+{"case": "18-431", "num_brief_docs": 3, "num_brief_chunks": 61, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5911493897438049}
+{"case": "18-443", "error": "missing corpus json"}
+{"case": "18-457", "num_brief_docs": 4, "num_brief_chunks": 49, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6213374733924866}
+{"case": "18-459", "num_brief_docs": 4, "num_brief_chunks": 65, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6052654981613159}
+{"case": "18-481", "num_brief_docs": 3, "num_brief_chunks": 52, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.5550476908683777}
+{"case": "18-483", "error": "missing corpus json"}
+{"case": "18-485", "num_brief_docs": 4, "num_brief_chunks": 50, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6115578413009644}
+{"case": "18-489", "num_brief_docs": 4, "num_brief_chunks": 86, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5965316891670227}
+{"case": "18-525", "num_brief_docs": 4, "num_brief_chunks": 62, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.614346981048584}
+{"case": "18-556", "num_brief_docs": 4, "num_brief_chunks": 57, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.6072694063186646}
+{"case": "18-56", "error": "missing corpus json"}
+{"case": "18-565", "num_brief_docs": 6, "num_brief_chunks": 97, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6249552965164185}
+{"case": "18-587", "num_brief_docs": 11, "num_brief_chunks": 221, "num_oral_chunks": 25, "avg_brief_oral_cosine": 0.6034403443336487}
+{"case": "18-5924", "num_brief_docs": 4, "num_brief_chunks": 71, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6061169505119324}
+{"case": "18-6135", "num_brief_docs": 4, "num_brief_chunks": 72, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5884695053100586}
+{"case": "18-6210", "num_brief_docs": 4, "num_brief_chunks": 75, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.531943142414093}
+{"case": "18-6662", "num_brief_docs": 4, "num_brief_chunks": 53, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5961518883705139}
+{"case": "18-6943", "num_brief_docs": 3, "num_brief_chunks": 58, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6470226645469666}
+{"case": "18-725", "num_brief_docs": 3, "num_brief_chunks": 65, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.637569785118103}
+{"case": "18-726", "num_brief_docs": 3, "num_brief_chunks": 55, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5731074810028076}
+{"case": "18-7739", "num_brief_docs": 3, "num_brief_chunks": 22, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6202081441879272}
+{"case": "18-776", "num_brief_docs": 4, "num_brief_chunks": 97, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5461684465408325}
+{"case": "18-801", "num_brief_docs": 5, "num_brief_chunks": 69, "num_oral_chunks": 15, "avg_brief_oral_cosine": 0.6064008474349976}
+{"case": "18-8369", "num_brief_docs": 4, "num_brief_chunks": 63, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6160606741905212}
+{"case": "18-877", "num_brief_docs": 3, "num_brief_chunks": 56, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6500334739685059}
+{"case": "18-882", "num_brief_docs": 3, "num_brief_chunks": 36, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5671433806419373}
+{"case": "18-916", "num_brief_docs": 7, "num_brief_chunks": 103, "num_oral_chunks": 20, "avg_brief_oral_cosine": 0.6244628429412842}
+{"case": "18-935", "num_brief_docs": 4, "num_brief_chunks": 69, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6222715377807617}
+{"case": "18-938", "num_brief_docs": 2, "num_brief_chunks": 37, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.6145404577255249}
+{"case": "18-9526", "num_brief_docs": 5, "num_brief_chunks": 70, "num_oral_chunks": 25, "avg_brief_oral_cosine": 0.6394566297531128}
+{"case": "18-96", "num_brief_docs": 4, "num_brief_chunks": 79, "num_oral_chunks": 16, "avg_brief_oral_cosine": 0.6319183111190796}
+{"case": "18-966", "num_brief_docs": 4, "num_brief_chunks": 95, "num_oral_chunks": 25, "avg_brief_oral_cosine": 0.5906510353088379}
+{"case": "19-122", "error": "missing corpus json"}
+{"case": "19-161", "num_brief_docs": 3, "num_brief_chunks": 47, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.6287949681282043}
+{"case": "19-177", "num_brief_docs": 4, "num_brief_chunks": 86, "num_oral_chunks": 18, "avg_brief_oral_cosine": 0.5521134734153748}
+{"case": "19-267", "num_brief_docs": 4, "num_brief_chunks": 61, "num_oral_chunks": 29, "avg_brief_oral_cosine": 0.5661784410476685}
+{"case": "19-373", "error": "missing corpus json"}
+{"case": "19-431", "num_brief_docs": 5, "num_brief_chunks": 83, "num_oral_chunks": 27, "avg_brief_oral_cosine": 0.5869020819664001}
+{"case": "19-46", "num_brief_docs": 4, "num_brief_chunks": 89, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.5378906726837158}
+{"case": "19-465", "num_brief_docs": 6, "num_brief_chunks": 86, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.5906511545181274}
+{"case": "19-518", "num_brief_docs": 6, "num_brief_chunks": 98, "num_oral_chunks": 17, "avg_brief_oral_cosine": 0.6126676201820374}
+{"case": "19-631", "num_brief_docs": 3, "num_brief_chunks": 49, "num_oral_chunks": 21, "avg_brief_oral_cosine": 0.6417922377586365}
+{"case": "19-635", "num_brief_docs": 4, "num_brief_chunks": 57, "num_oral_chunks": 30, "avg_brief_oral_cosine": 0.6615086197853088}
+{"case": "19-67", "num_brief_docs": 4, "num_brief_chunks": 66, "num_oral_chunks": 19, "avg_brief_oral_cosine": 0.5393425226211548}
+{"case": "19-7", "num_brief_docs": 3, "num_brief_chunks": 41, "num_oral_chunks": 22, "avg_brief_oral_cosine": 0.6130606532096863}
+{"case": "19-715", "num_brief_docs": 7, "num_brief_chunks": 59, "num_oral_chunks": 27, "avg_brief_oral_cosine": 0.5961542129516602}
+{"case": "logs", "error": "missing json dir"}
