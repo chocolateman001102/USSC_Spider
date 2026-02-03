@@ -90,8 +90,10 @@ def chunk_text(text: str, chunk_size: int = 800, overlap: int = 200) -> List[str
         i += max(1, chunk_size - overlap)
     return chunks
 
-#使用sentence-transformers神经网络嵌入向量，计算余弦相似度，并使用最大相似度平均法
+#使用sentence-transformers
+#mean-max similarity
 def compute_avg_max_similarity(brief_chunks: List[str], oral_chunks: List[str], model: SentenceTransformer) -> float:
+    """Compute mean-max similarity: for each brief chunk, find max similarity with oral chunks, then average."""
     if not brief_chunks or not oral_chunks:
         return float('nan')
     
@@ -114,6 +116,29 @@ def compute_avg_max_similarity(brief_chunks: List[str], oral_chunks: List[str], 
     
     # Return the average of these maximum similarities
     return float(np.mean(max_sims_per_brief))
+
+#mean-mean similarity
+def compute_avg_mean_similarity(brief_chunks: List[str], oral_chunks: List[str], model: SentenceTransformer) -> float:
+    """Compute mean-mean similarity: simple average of all brief-oral chunk similarities."""
+    if not brief_chunks or not oral_chunks:
+        return float('nan')
+    
+    # Encode chunks using neural embeddings
+    print(f"  Encoding {len(brief_chunks)} brief chunks...")
+    brief_embeddings = model.encode(brief_chunks, show_progress_bar=False, convert_to_numpy=True)
+    
+    print(f"  Encoding {len(oral_chunks)} oral chunks...")
+    oral_embeddings = model.encode(oral_chunks, show_progress_bar=False, convert_to_numpy=True)
+    
+    # Compute pairwise cosine similarities: shape (n_brief, n_oral)
+    sims = cosine_similarity(brief_embeddings, oral_embeddings)
+    
+    # Check for NaN values
+    if np.isnan(sims).any():
+        raise ValueError("Found NaN values in similarity matrix - this indicates data quality issues")
+    
+    # Return the overall mean of all similarities
+    return float(np.mean(sims))
 
 
 def process_case(case_dir: Path, chunk_size: int, overlap: int, model: SentenceTransformer) -> Dict:
@@ -151,7 +176,8 @@ def process_case(case_dir: Path, chunk_size: int, overlap: int, model: SentenceT
             brief_chunk_map.append((fname, idx))
 
     try:
-        avg_sim = compute_avg_max_similarity(brief_chunks, oral_chunks, model)
+        avg_sim_max = compute_avg_max_similarity(brief_chunks, oral_chunks, model)
+        avg_sim_mean = compute_avg_mean_similarity(brief_chunks, oral_chunks, model)
     except Exception as e:
         return {
             'case': case_dir.name,
@@ -166,7 +192,8 @@ def process_case(case_dir: Path, chunk_size: int, overlap: int, model: SentenceT
         'num_brief_docs': len(brief_texts),
         'num_brief_chunks': len(brief_chunks),
         'num_oral_chunks': len(oral_chunks),
-        'avg_brief_oral_cosine': avg_sim,
+        'avg_brief_oral_cosine_max': avg_sim_max,
+        'avg_brief_oral_cosine_mean': avg_sim_mean,
     }
 
 
@@ -250,7 +277,9 @@ def main():
     # Also print a concise summary
     print("Summary:")
     for r in results:
-        print(f"{r['case']}: docs={r.get('num_brief_docs')} brief_chunks={r.get('num_brief_chunks')} oral_chunks={r.get('num_oral_chunks')} avg={r.get('avg_brief_oral_cosine')}")
+        max_score = r.get('avg_brief_oral_cosine_max', 'N/A')
+        mean_score = r.get('avg_brief_oral_cosine_mean', 'N/A')
+        print(f"{r['case']}: docs={r.get('num_brief_docs')} brief_chunks={r.get('num_brief_chunks')} oral_chunks={r.get('num_oral_chunks')} max={max_score} mean={mean_score}")
 
 
 if __name__ == '__main__':
