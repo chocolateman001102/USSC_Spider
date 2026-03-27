@@ -788,9 +788,9 @@ def main() -> None:
     ap.add_argument('--queries-json', type=Path, default=None,
                     help='JSON/JSONL input file with docket_no fields (omit to use --all-cases)')
     ap.add_argument('--all-cases', action='store_true',
-                    help='Auto-discover all cases via the Oyez API')
+                    help='Auto-discover ALL cases via the Oyez API (no term filter)')
     ap.add_argument('--term', type=int, nargs='+', default=None, metavar='YEAR',
-                    help='With --all-cases: one year (--term 2023) or a range (--term 1997 2003)')
+                    help='Discover cases for a term or range via Oyez API, e.g. --term 2023 or --term 2001 2026')
     ap.add_argument('--output-dir', type=Path, default=Path('./data'),
                     help='Directory to write PDFs and JSON (default: ./output)')
     ap.add_argument('--min-interval', type=float, default=1.5,
@@ -799,8 +799,8 @@ def main() -> None:
                     help='Skip cases before this year, e.g. --min-year 2000 (default: 1900 = all)')
     args = ap.parse_args()
 
-    if not args.all_cases and args.queries_json is None:
-        ap.error('Provide either --queries-json <file> or --all-cases')
+    if not args.all_cases and args.term is None and args.queries_json is None:
+        ap.error('Provide one of: --queries-json <file>, --all-cases, or --term YEAR [YEAR]')
 
     ensure_dir(args.output_dir)
     init_logger(args.output_dir)
@@ -835,7 +835,7 @@ def main() -> None:
                 return False
         return True
 
-    if args.all_cases:
+    if args.all_cases or args.term:
         # Resolve term range
         term_years: List[int] = []
         if args.term:
