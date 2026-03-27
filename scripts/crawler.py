@@ -119,9 +119,9 @@ def save_bytes(path: Path, data: bytes) -> None:
 
 
 def make_output_paths(output_dir: Path, query_code: str, sha256_hex: str, suffix: str, custom_name: Optional[str] = None) -> Path:
-    """创建输出路径"""
+    """创建输出路径。Custom names always include a short hash suffix to guarantee uniqueness."""
     if custom_name:
-        name = f"{custom_name}{suffix}"
+        name = f"{custom_name}_{sha256_hex[:6]}{suffix}"
     else:
         name = f"{query_code}_{sha256_hex[:8]}{suffix}"
     return output_dir / name
@@ -178,26 +178,33 @@ def extract_party_names(text: str) -> str:
     
     # 提取模式：寻找 "of [petitioner/respondent/amicus] PARTY_NAME"
     patterns = [
-        r'(?:brief|reply)\s+of\s+(?:petitioners?|respondents?)\s+(.+?)(?:\s+filed|\s*$)',
-        r'(?:brief|reply)\s+for\s+(?:petitioners?|respondents?)\s+(.+?)(?:\s+filed|\s*$)',
-        r'(?:brief|reply)\s+of\s+amicus\s+curiae\s+(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
-        r'(?:brief|reply)\s+for\s+amicus\s+curiae\s+(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
-        r'(?:brief|reply)\s+of\s+(.+?)(?:\s+as\s+amicus\s+curiae|\s+filed|\s*$)',
+        # "Brief/Reply of/for petitioners/respondents PARTY" 
+        r'(?:reply\s+)?(?:brief|reply)\s+(?:of|for)\s+(?:petitioners?|respondents?)\s+(.+?)(?:\s+filed|\s*$)',
+        # "Brief amici/amicus curiae of PARTY filed" — include optional 'of'
+        r'(?:brief|reply)\s+(?:of|for)\s+amici\s+curiae\s+(?:of\s+)?(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
+        r'(?:brief|reply)\s+(?:of|for)\s+amicus\s+curiae\s+(?:of\s+)?(.+?)(?:\s+filed|\s+in\s+support|\s*$)',
+        r'(?:brief|reply)\s+(?:of|for)\s+(.+?)\s+as\s+amicus\s+curiae',
     ]
     
     party_name = None
     
-    # 使用原始文本进行匹配以保留大小写
     for pattern in patterns:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
             party_name = match.group(1).strip()
+            # Strip trailing noise like "et al", "in support of", punctuation
+            party_name = re.sub(r',?\s*et\s+al\.?', '', party_name, flags=re.IGNORECASE)
+            party_name = re.sub(r'\s+in\s+support\s+of.+$', '', party_name, flags=re.IGNORECASE)
+            party_name = party_name.strip(' .,')
             break
     
     if not party_name:
-        # 如果没有匹配到，返回清理后的前几个词
-        words = text.split()[:5]
-        party_name = ' '.join(words)
+        # Fallback: skip generic noise words and take first meaningful words
+        skip = {'brief', 'reply', 'amici', 'amicus', 'curiae', 'filed', 'main', 'document',
+                'certificate', 'word', 'count', 'proof', 'service', 'of', 'for', 'the', 'and'}
+        words_raw = text.split()
+        words = [w.strip('.,;:') for w in words_raw if w.strip('.,;:').lower() not in skip and len(w.strip('.,;:')) > 1]
+        party_name = ' '.join(words[:5]) if words else text.split()[0] if text.split() else 'Unknown'
     
     # 应用缩写
     for full_name, abbr in abbreviations.items():
@@ -209,17 +216,17 @@ def extract_party_names(text: str) -> str:
     party_name = re.sub(r'\s*,\s*', ' ', party_name)  # 移除逗号
     party_name = re.sub(r'\s+', ' ', party_name).strip()
     
-    # 限制长度，取前3个有意义的词
+    # 限制长度，取前6个有意义的词（enough to distinguish parties)
     words = [w for w in party_name.split() if len(w) > 2 or w.isupper()]
-    if len(words) > 3:
-        party_name = ' '.join(words[:3])
+    if len(words) > 6:
+        party_name = ' '.join(words[:6])
     else:
         party_name = ' '.join(words) if words else party_name
     
     # 清理并限制总长度
     party_name = sanitize_filename(party_name)
-    if len(party_name) > 50:
-        party_name = party_name[:50].strip()
+    if len(party_name) > 70:
+        party_name = party_name[:70].strip()
     
     return party_name if party_name else "Unknown"
 
@@ -363,8 +370,9 @@ class ScotusDocketAdapter(SiteAdapter):
         return f"{self.base_url}/search.aspx?filename=/docketfiles/{code_no_ext}.htm"
 
     def _build_alt_url_from_code(self, code_no_ext: str) -> str:
-        # 另一已知格式： https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-1201.html
-        return f"{self.base_url}/search.aspx?filename=/docket/docketfiles/html/public/{code_no_ext}.html"
+        # Direct docket HTML: used for post-2019 cases (reliable; avoids search.aspx wrapper)
+        # e.g. https://www.supremecourt.gov/docket/docketfiles/html/public/20-843.html
+        return f"{self.base_url}/docket/docketfiles/html/public/{code_no_ext}.html"
 
     def _is_blank_search_results_page(self, soup: BeautifulSoup) -> bool:
         """启发式：识别空的“Search Results”页（常见于错误格式）。
@@ -379,35 +387,40 @@ class ScotusDocketAdapter(SiteAdapter):
         return has_search_ui and (not has_no)
 
     def _iter_pdf_links(self, soup: BeautifulSoup):
-        """以更鲁棒的方式遍历 PDF 链接（大小写不敏感，兼容 DocketPDF 目录）。只返回 Main Document 链接。"""
+        """Iterate over Main Document PDF links, yielding (href, desc, parent_text, date_text, row_text).
+        parent_text = the <td> cell text containing the link cluster.
+        row_text    = the full <tr> row text, which starts with the document-type label.
+        """
         for a in soup.find_all('a'):
             href = (a.get('href') or '').strip()
             if not href:
                 continue
             low = href.lower()
-            if low.endswith('.pdf') or ('/docketpdf/' in low):
-                desc = a.get_text(" ", strip=True)
-                # 调试日志：显示所有找到的PDF链接
-                logging.debug('Found PDF link: desc="%s", href="%s"', desc, href)
-                # 只处理 "Main Document" 链接
-                if desc.strip().lower() != 'main document':
-                    logging.debug('Skipping non-Main Document: "%s"', desc)
-                    continue
-                logging.info('Processing Main Document: "%s"', desc)
-                # 获取更广泛的父元素文本，包括整个表格单元格
-                parent_text = desc
-                date_text = ""
-                current = a.find_parent()
-                while current:
-                    if current.name == 'td':  # 找到表格单元格
-                        parent_text = current.get_text(" ", strip=True)
-                        # 查找同一行中的日期单元格
-                        if current.find_previous_sibling('td', class_='ProceedingDate'):
-                            date_cell = current.find_previous_sibling('td', class_='ProceedingDate')
-                            date_text = date_cell.get_text(" ", strip=True) if date_cell else ""
-                        break
-                    current = current.find_parent()
-                yield href, desc, parent_text, date_text
+            if not (low.endswith('.pdf') or ('/docketpdf/' in low)):
+                continue
+            desc = a.get_text(" ", strip=True)
+            logging.debug('Found PDF link: desc="%s", href="%s"', desc, href)
+            if desc.strip().lower() != 'main document':
+                logging.debug('Skipping non-Main Document: "%s"', desc)
+                continue
+            logging.info('Processing Main Document: "%s"', desc)
+            parent_text = desc
+            date_text = ""
+            row_text = ""
+            current = a.find_parent()
+            while current:
+                if current.name == 'td':
+                    parent_text = current.get_text(" ", strip=True)
+                    if current.find_previous_sibling('td', class_='ProceedingDate'):
+                        date_cell = current.find_previous_sibling('td', class_='ProceedingDate')
+                        date_text = date_cell.get_text(" ", strip=True) if date_cell else ""
+                    # Get the full row text for document-type identification
+                    row = current.find_parent('tr')
+                    if row:
+                        row_text = row.get_text(" ", strip=True)
+                    break
+                current = current.find_parent()
+            yield href, desc, parent_text, date_text, row_text
 
     def search_and_resolve(self, query_code: str) -> Optional[ResolvedDoc]:
         if not re.match(r"^[0-9]{2}-[0-9]+$", (query_code or "").strip()):
@@ -416,15 +429,19 @@ class ScotusDocketAdapter(SiteAdapter):
         candidates = [primary] + alts
         last_resp = None
         for cand in candidates:
-            for url in (self._build_url_from_code(cand), self._build_alt_url_from_code(cand)):
+            # Try new HTML format first (post-2019 cases), then old HTM format (pre-2020)
+            for url in (self._build_alt_url_from_code(cand), self._build_url_from_code(cand)):
                 r = self.session.get(url, timeout=30, allow_redirects=True)
                 last_resp = r
                 if r.status_code != 200:
                     continue
                 final_url = r.url or url
-                # 接受两种末尾形式：.htm 或 .html
+                # Accept .htm or .html docket pages (both old and new SCOTUS formats).
+                # SCOTUS serves via search.aspx?filename=...html — endswith still works
+                # because the query param ends with the docket filename.
                 low = final_url.lower()
-                if not (low.endswith(f"/{cand.lower()}.htm") or low.endswith(f"/{cand.lower()}.html")):
+                if not (low.endswith(f"/{cand.lower()}.htm") or low.endswith(f"/{cand.lower()}.html")
+                        or low.endswith(f"{cand.lower()}.htm") or low.endswith(f"{cand.lower()}.html")):
                     continue
                 soup = BeautifulSoup(r.text, 'lxml')
                 if self._is_blank_search_results_page(soup):
@@ -433,7 +450,8 @@ class ScotusDocketAdapter(SiteAdapter):
                 anchors = list(self._iter_pdf_links(soup))
                 if not anchors:
                     return ResolvedDoc(query_code, final_url, '', (soup.find('title').get_text(strip=True) if soup.find('title') else None), None, {"note": "no pdf link on page"})
-                href, desc, parent_text = anchors[0]
+                # Fix: replaced 'search_and_resolve' unpack from 3 to 4 values + ignored row_text
+                href, desc, parent_text, date_text, row_text = anchors[0]
                 download_url = href if href.startswith('http') else f"{self.base_url}{href if href.startswith('/') else '/' + href}"
                 title = (desc or parent_text or '').strip() or (soup.find('title').get_text(strip=True) if soup.find('title') else None)
                 return ResolvedDoc(query_code, final_url, download_url, title, None, {})
@@ -449,63 +467,112 @@ class ScotusDocketAdapter(SiteAdapter):
         candidates = [primary] + alts
         docs: List[ResolvedDoc] = []
         last_resp = None
+        found_valid_page = False
         for cand in candidates:
-            for url in (self._build_url_from_code(cand), self._build_alt_url_from_code(cand)):
+            if found_valid_page:
+                break
+            # Try new HTML format first (post-2019 cases), then old HTM format (pre-2020)
+            for url in (self._build_alt_url_from_code(cand), self._build_url_from_code(cand)):
                 r = self.session.get(url, timeout=30, allow_redirects=True)
                 last_resp = r
                 if r.status_code != 200:
                     continue
                 final_url = r.url or url
+                # Accept .htm or .html docket pages (old and new SCOTUS URL formats).
                 low = final_url.lower()
-                if not (low.endswith(f"/{cand.lower()}.htm") or low.endswith(f"/{cand.lower()}.html")):
+                if not (low.endswith(f"/{cand.lower()}.htm") or low.endswith(f"/{cand.lower()}.html")
+                        or low.endswith(f"{cand.lower()}.htm") or low.endswith(f"{cand.lower()}.html")):
                     continue
                 soup = BeautifulSoup(r.text, 'lxml')
                 if self._is_blank_search_results_page(soup):
                     continue
 
-            # Heuristic: merits-stage briefs usually appear as entries containing "Brief" with
-            # party or amicus indicators, and without cert-stage words.
-            include_kw = [
-                'brief of petitioner', 'brief for petitioner', 'brief of petitioners', 'brief for petitioners',
-                'brief of respondent', 'brief for respondent', 'brief of respondents', 'brief for respondents',
-                'amicus', 'amici', 'amicus curiae', 'amici curiae', 'reply brief'
-            ]
-            exclude_kw = []
+                # 找到有效页面 —— 在此处处理所有 PDF 链接（修复：之前错误地放在循环外）
+                found_valid_page = True
 
-            def is_merits_brief(text: str) -> bool:
-                t = (text or '').strip().lower()
-                if 'brief' not in t:
+                # Heuristic: merits-stage briefs usually appear as entries containing "Brief" with
+                # party or amicus indicators, and without cert-stage words.
+                include_kw = [
+                    'brief of petitioner', 'brief for petitioner', 'brief of petitioners', 'brief for petitioners',
+                    'brief of respondent', 'brief for respondent', 'brief of respondents', 'brief for respondents',
+                    'amicus', 'amici', 'amicus curiae', 'amici curiae', 'reply brief'
+                ]
+
+                def is_merits_brief(text: str) -> bool:
+                    t = (text or '').strip().lower()
+                    if 'brief' not in t:
+                        return False
+                    if any(x in t for x in include_kw):
+                        return True
                     return False
-                if any(x in t for x in include_kw):
-                    return True
-                return False
 
-            # Prefer container rows that hold both date and description.
-            # On SCOTUS pages, PDFs are linked inside <a> tags. We'll inspect the parent text.
-            for href, desc, parent_text, date_text in self._iter_pdf_links(soup):
-                # _iter_pdf_links 已经确保只返回 "Main Document" 链接，现在检查是否包含 brief 或 reply
-                parent_text_lower = parent_text.lower()
-                if not ('brief' in parent_text_lower or 'reply' in parent_text_lower):
-                    logging.info('Skipping document (no brief/reply): "%s"', parent_text[:100] + '...' if len(parent_text) > 100 else parent_text)
-                    continue
-                
-                logging.info('Processing brief/reply document: "%s"', parent_text[:100] + '...' if len(parent_text) > 100 else parent_text)
-                
-                full_url = href if href.startswith('http') else f"{self.base_url}{href if href.startswith('/') else '/' + href}"
-                title_text = desc or parent_text
-                
-                # 提取当事人名称作为文件名
-                party_name = extract_party_names(parent_text)
-                logging.info('Extracted party name: "%s" from "%s"', party_name, parent_text[:100])
-                
-                custom_filename = party_name
-                logging.info('Generated filename: "%s"', custom_filename)
-                docs.append(ResolvedDoc(query_code, final_url, full_url, title_text, None, {
-                    "date": date_text,
-                    "custom_filename": custom_filename
-                }))
-                # 移除 break 语句，继续处理所有符合条件的文档
-            # 移除 break 语句，继续尝试其他 URL 变体
+                # Strict allowlist: only download documents whose row label starts with a brief/reply type.
+                # Use row_text (full <tr>) so we get the actual document-type label, not just the
+                # surrounding cell text that might mention 'brief' incidentally (e.g. motions).
+                BRIEF_PREFIXES = (
+                    'brief of petitioner', 'brief for petitioner',
+                    'brief of respondent', 'brief for respondent',
+                    'brief of amicus', 'brief for amicus',
+                    'brief of amici', 'brief for amici',
+                    'reply brief', 'reply of petitioner', 'reply for petitioner',
+                    'reply of respondent', 'reply for respondent',
+                    # Common shorthand labels on SCOTUS docket pages:
+                    'brief amicus curiae', 'brief amici curiae',
+                    # Catch-all for labelled briefs not matching above:
+                )
+
+                for href, desc, parent_text, date_text, row_text in self._iter_pdf_links(soup):
+                    row_lower = row_text.lower()
+                    # The row_text starts with the date, then the document type.
+                    # Extract just the document-type portion (after the date-like prefix).
+                    # We check if ANY brief prefix appears in the first 120 chars of row_text
+                    # (to capture the label before the link cluster and word counts).
+                    row_label = row_lower[:120]
+                    is_brief = any(p in row_label for p in BRIEF_PREFIXES)
+                    if not is_brief:
+                        logging.info('Skipping non-brief document: "%s"', row_text[:80])
+                        continue
+
+                    full_url = href if href.startswith('http') else f"{self.base_url}{href if href.startswith('/') else '/' + href}"
+                    title_text = desc or parent_text
+
+                    # Build descriptive filename: {date}_{role}_{party}
+                    # date_part: compact YYYYMMDD from date_text (e.g. "Jul 20 2021" → "20210720")
+                    date_part = ""
+                    if date_text:
+                        try:
+                            import datetime as _dt
+                            date_part = _dt.datetime.strptime(date_text.strip(), "%b %d %Y").strftime("%Y%m%d")
+                        except Exception:
+                            date_part = re.sub(r'\s+', '', date_text)[:8]
+
+                    # role: brief type extracted from the row label
+                    _rl = row_text.lower()[:80]
+                    if 'reply' in _rl:
+                        role = 'reply'
+                    elif 'petitioner' in _rl:
+                        role = 'petitioner'
+                    elif 'respondent' in _rl:
+                        role = 'respondent'
+                    elif 'amici' in _rl:
+                        role = 'amici'
+                    elif 'amicus' in _rl:
+                        role = 'amicus'
+                    else:
+                        role = 'brief'
+
+                    party_name = extract_party_names(parent_text)
+                    parts = [p for p in [date_part, role, party_name] if p]
+                    # Replace spaces with underscores for clean filenames
+                    custom_filename = sanitize_filename('_'.join(parts).replace(' ', '_'))[:90]
+                    logging.info('Filename: "%s"', custom_filename)
+                    docs.append(ResolvedDoc(query_code, final_url, full_url, title_text, None, {
+                        "date": date_text,
+                        "custom_filename": custom_filename
+                    }))
+
+                break  # stop trying more URL variants once a valid page is found
+
         if not docs and last_resp is not None:
             logging.info('No merits briefs found for %s; last url=%s status=%s', query_code, last_resp.url, last_resp.status_code)
         else:
@@ -532,6 +599,60 @@ def load_queries_from_json(path: Path) -> List[Dict[str, Any]]:
             items.append(json.loads(s))
         return items
     return []
+
+
+def discover_cases_from_oyez(session: requests.Session, term: Optional[int] = None,
+                              page_size: int = 100, min_interval: float = 1.0):
+    """Generator: page through the Oyez API and yield docket numbers (XX-NNNN format only).
+
+    Args:
+        session:      requests.Session to reuse.
+        term:         If set, only yield cases from that SCOTUS term year (e.g. 2023).
+        page_size:    Cases per page (max 100 recommended).
+        min_interval: Seconds to sleep between API pages.
+    Yields:
+        str: docket number, e.g. '22-300'
+    """
+    base = 'https://api.oyez.org/cases'
+    page = 0
+    seen: set = set()
+    docket_re = re.compile(r'^[0-9]{2}-[0-9]+$')
+
+    while True:
+        params: dict = {'per_page': page_size, 'page': page}
+        if term is not None:
+            params['filter'] = f'term:{term}'
+        try:
+            r = session.get(base, params=params, timeout=30)
+            r.raise_for_status()
+            data = r.json()
+        except Exception as e:
+            logging.error('Oyez API error on page %d: %s', page, e)
+            break
+
+        if not data:
+            break  # no more pages
+
+        found_any = False
+        for case in data:
+            docket = str(case.get('docket_number') or '').strip()
+            if not docket or not docket_re.match(docket):
+                continue  # skip old-format dockets (plain numbers) and A-numbers
+            if re.match(r'^[0-9]{2}A[0-9]+$', docket, re.IGNORECASE):
+                continue
+            if docket in seen:
+                continue
+            seen.add(docket)
+            found_any = True
+            yield docket
+
+        logging.info('Oyez page %d: fetched %d cases, yielded %d new dockets so far',
+                     page, len(data), len(seen))
+        page += 1
+        time.sleep(min_interval)
+
+        if not found_any and len(data) < page_size:
+            break  # last page, nothing new
 
 @dataclass
 class RunStats:
@@ -663,70 +784,113 @@ def process_one(query_code: str, adapter: SiteAdapter, downloader: Downloader, e
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument('--queries-json', type=Path, required=True, help='JSON/JSONL 输入文件，记录需含 docket_no')
-    ap.add_argument('--output-dir', type=Path, default=Path('./data'))
-    ap.add_argument('--site', type=str, required=True, help='站点键，例如 scotus')
-    ap.add_argument('--base-url', type=str, default=None)
-    ap.add_argument('--user-agent', type=str, default='crawler-pdf-json/1.0')
-    ap.add_argument('--min-interval', type=float, default=1.0)
-    ap.add_argument('--enable-ocr', type=int, default=0)
-    ap.add_argument('--min-year', type=int, default=1900, help='最小年份过滤（默认1900，设为0则不过滤）')
+    ap = argparse.ArgumentParser(description='SCOTUS brief crawler')
+    ap.add_argument('--queries-json', type=Path, default=None,
+                    help='JSON/JSONL input file with docket_no fields (omit to use --all-cases)')
+    ap.add_argument('--all-cases', action='store_true',
+                    help='Auto-discover all cases via the Oyez API')
+    ap.add_argument('--term', type=int, nargs='+', default=None, metavar='YEAR',
+                    help='With --all-cases: one year (--term 2023) or a range (--term 1997 2003)')
+    ap.add_argument('--output-dir', type=Path, default=Path('./data'),
+                    help='Directory to write PDFs and JSON (default: ./output)')
+    ap.add_argument('--min-interval', type=float, default=1.5,
+                    help='Seconds between requests (default: 1.5)')
+    ap.add_argument('--min-year', type=int, default=1900,
+                    help='Skip cases before this year, e.g. --min-year 2000 (default: 1900 = all)')
     args = ap.parse_args()
+
+    if not args.all_cases and args.queries_json is None:
+        ap.error('Provide either --queries-json <file> or --all-cases')
 
     ensure_dir(args.output_dir)
     init_logger(args.output_dir)
 
+    user_agent = 'crawler-pdf-json/1.0'
     session = requests.Session()
-    session.headers.update({'User-Agent': args.user_agent, 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'})
+    session.headers.update({
+        'User-Agent': user_agent,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    })
 
-    adapter = build_adapter(args.site, session, args.base_url)
-    downloader = Downloader(session, user_agent=args.user_agent, min_interval=args.min_interval)
-    extractor = PDFExtractor(enable_ocr=bool(args.enable_ocr))
+    adapter = build_adapter('scotus', session, 'https://www.supremecourt.gov')
+    downloader = Downloader(session, user_agent=user_agent, min_interval=args.min_interval)
+    extractor = PDFExtractor(enable_ocr=False)
 
-    # 从 JSON/JSONL 构建任务，仅保留 YY-数字案号
-    records = load_queries_from_json(args.queries_json)
-    tasks: List[str] = []
-    for rec in records:
-        code = str(rec.get('docket_no', '')).strip()
-        if not code:
-            continue
-        if re.match(r'^[0-9]{2}A[0-9]+$', code, re.IGNORECASE):  # 跳过 A 号
-            logging.info('SKIP application docket (A-number): %s', code)
-            continue
+
+    # ---- build task iterator ------------------------------------------------
+    def _filter_docket(code: str) -> bool:
+        """Return True if docket passes format and year filters."""
+        if re.match(r'^[0-9]{2}A[0-9]+$', code, re.IGNORECASE):
+            return False  # skip A-numbers
         if not re.match(r'^[0-9]{2}-[0-9]+$', code):
-            logging.info('SKIP unsupported docket format: %s', code)
-            continue
-        # 年份过滤（可配置）
+            return False
         if args.min_year > 0:
             try:
                 yy = int(code.split('-', 1)[0])
                 current_yy = int(dt.datetime.utcnow().strftime('%y'))
-                # 两位年份到完整年份：小于等于当前两位年视为 2000+yy，否则视为 1900+yy
                 full_year = 2000 + yy if yy <= current_yy else 1900 + yy
                 if full_year < args.min_year:
-                    logging.info('SKIP docket before %d: %s (year=%d)', args.min_year, code, full_year)
-                    continue
+                    return False
             except Exception:
-                logging.info('SKIP due to year parse error: %s', code)
-                continue
-        tasks.append(code)
+                return False
+        return True
 
-    stats = RunStats(total=len(tasks))
-    for q in tasks:
+    if args.all_cases:
+        # Resolve term range
+        term_years: List[int] = []
+        if args.term:
+            if len(args.term) == 1:
+                term_years = [args.term[0]]
+                logging.info('Discovering cases for SCOTUS term %d via Oyez API…', args.term[0])
+            elif len(args.term) == 2:
+                start, end = sorted(args.term)
+                term_years = list(range(start, end + 1))
+                logging.info('Discovering cases for SCOTUS terms %d–%d via Oyez API…', start, end)
+            else:
+                ap.error('--term accepts 1 or 2 year values')
+        else:
+            logging.info('Discovering ALL cases via Oyez API (this may take a while)…')
+
+        def _all_cases_gen():
+            if term_years:
+                seen_global: set = set()
+                for yr in term_years:
+                    for code in discover_cases_from_oyez(session, term=yr, min_interval=args.min_interval):
+                        if code not in seen_global and _filter_docket(code):
+                            seen_global.add(code)
+                            yield code
+            else:
+                for code in discover_cases_from_oyez(session, term=None, min_interval=args.min_interval):
+                    if _filter_docket(code):
+                        yield code
+
+        tasks_iter = _all_cases_gen()
+    else:
+        records = load_queries_from_json(args.queries_json)
+        raw: List[str] = []
+        for rec in records:
+            code = str(rec.get('docket_no', '')).strip()
+            if code and _filter_docket(code):
+                raw.append(code)
+            elif code:
+                logging.info('SKIP unsupported/filtered docket: %s', code)
+        tasks_iter = iter(raw)
+
+    # ---- run ----------------------------------------------------------------
+    stats = RunStats()
+    for q in tasks_iter:
+        stats.total += 1
         status, msg = process_one(q, adapter, downloader, extractor, args.output_dir)
         if status == 'success':
             stats.success += 1
         elif status == 'not_found':
-            if 'no merits briefs found' in msg:
-                logging.info('SKIP %s: %s', q, msg)
-            else:
-                logging.info('NOT_FOUND %s: %s', q, msg)
+            logging.info('SKIP %s: %s', q, msg)
             stats.not_found += 1
         else:
             stats.failed += 1
 
-    logging.info('RUN DONE: total=%d success=%d not_found=%d failed=%d', stats.total, stats.success, stats.not_found, stats.failed)
+    logging.info('RUN DONE: total=%d success=%d not_found=%d failed=%d',
+                 stats.total, stats.success, stats.not_found, stats.failed)
 
 
 if __name__ == '__main__':

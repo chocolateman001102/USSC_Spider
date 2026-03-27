@@ -1,13 +1,16 @@
 # USSC Spider
 
-A Python tool for downloading legal briefs from the US Supreme Court and analyzing similarity between briefs and oral arguments using neural embeddings.
+A Python tool for downloading merits briefs from the US Supreme Court (SCOTUS) and oral-argument transcripts from Oyez, then analyzing semantic similarity between them using neural embeddings.
+
+---
 
 ## Features
 
-- Downloads PDF briefs and replies from SCOTUS docket pages
-- Extracts text content from PDFs (supports OCR for scanned documents)
-- Computes semantic similarity using neural embeddings (Sentence-Transformers)
-- Outputs structured JSON metadata and similarity scores
+- **Auto-discovers** all SCOTUS cases via the Oyez API — no manual case list needed
+- Downloads only **merits briefs** (petitioner, respondent, amicus curiae) — motions, letters and certificates are excluded
+- Generates **unique, descriptive filenames** (`{date}_{role}_{party}_{hash}.pdf`)
+- Fetches **oral argument transcripts** from Oyez for all terms
+- Computes **semantic similarity** (Sentence-Transformers) between briefs and oral arguments
 
 ---
 
@@ -16,215 +19,142 @@ A Python tool for downloading legal briefs from the US Supreme Court and analyzi
 ### 1. Install Dependencies
 
 ```bash
-# For web scraping
-pip install requests beautifulsoup4 lxml pymupdf pdfminer.six
-
-# For similarity analysis
-pip install sentence-transformers
-
-# Optional: for OCR support
-pip install ocrmypdf
+pip install requests beautifulsoup4 lxml pymupdf pdfminer.six sentence-transformers
 ```
 
-### 2. Download Briefs
-
-Create an input file `cases.jsonl`:
-```json
-{"docket_no": "17-773"}
-{"docket_no": "17-21"}
-```
-
-Run the scraper:
-```bash
-python3 scripts/crawler.py \
-  --queries-json cases.jsonl \
-  --output-dir ./data \
-  --site scotus
-```
-
-### 3. Analyze Similarity
+### 2. Download Briefs — All Cases (Auto-Discovery)
 
 ```bash
-# Analyze all cases
-python3 scripts/process_similarity.py --all-cases
+# All cases, all terms (takes several hours)
+py scripts/crawler.py --all-cases
 
-# Or specific cases
-python3 scripts/process_similarity.py --cases 17-773 17-21 --output "results.jsonl"
+# Single term
+py scripts/crawler.py --all-cases --term 2023
+
+# Year range  (e.g. 1997–2003 inclusive)
+py scripts/crawler.py --all-cases --term 1997 2003
+
+# Using a manual JSONL list instead
+py scripts/crawler.py --queries-json cases.jsonl
 ```
 
----
-
-## Crawler Usage
-
-### Basic Command
-```bash
-python3 scripts/crawler.py \
-  --queries-json cases.jsonl \
-  --output-dir ./data \
-  --site scotus
-```
-
-### Key Arguments
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--queries-json` | - | Input JSONL file with docket numbers (required) |
-| `--output-dir` | `./data` | Output directory |
-| `--site` | - | Site key (use `scotus`) |
-| `--min-interval` | `1.0` | Seconds between requests |
-| `--enable-ocr` | `0` | Enable OCR (0=off, 1=on) |
-
-### Output Structure
-```
-data/
-├── 17-773/
-│   ├── pdf/
-│   │   └── Brief_Petitioner.pdf
-│   └── json/
-│       ├── Brief_Petitioner.json
-│       └── 17-773__corpus.json
-output/
-├── all_cases_similarity_mpnet.jsonl  # Similarity analysis results
-└── scraper_output.log                # Crawler logs
-```
-
-**Note:** All generated output files (similarity results, logs) are stored in the `output/` folder.
-
----
-
-## Similarity Analysis
-
-### What It Does
-Computes semantic similarity between legal briefs and oral arguments using:
-- **Neural embeddings** (Sentence-Transformers) instead of TF-IDF
-- **Max-similarity averaging**: For each brief chunk, finds the best match with oral chunks, then averages
-
-### Quick Commands
+### 3. Fetch Oral Argument Transcripts (Oyez)
 
 ```bash
-# All cases (recommended)
-python3 scripts/process_similarity.py --all-cases --output "all_results.jsonl"
+# All cases, all terms
+py scripts/oyez_scraper.py --all-cases
+
+# Single term
+py scripts/oyez_scraper.py --term 2023
+
+# Year range
+py scripts/oyez_scraper.py --term 1997 2003
+
+# Specific dockets
+py scripts/oyez_scraper.py --cases 22-300 21-476
+```
+
+### 4. Analyze Similarity
+
+```bash
+# All cases
+py scripts/process_similarity.py --all-cases --output similarity_results.jsonl
 
 # Specific cases
-python3 scripts/process_similarity.py --cases 17-773 17-21 --output "results.jsonl"
+py scripts/process_similarity.py --cases 22-300 21-476 --output results.jsonl
 
-# High-quality model (slower but more accurate)
-python3 scripts/process_similarity.py --all-cases --model "all-mpnet-base-v2" --output "results.jsonl"
-
-# Custom chunk size
-python3 scripts/process_similarity.py --all-cases --chunk-size 1500 --overlap 300 --output "results.jsonl"
+# Higher-quality model (slower)
+py scripts/process_similarity.py --all-cases --model all-mpnet-base-v2 --output results.jsonl
 ```
 
-### Parameters
+---
+
+## Output Structure
+
+```
+data/
+└── {docket}/               e.g. 22-300/
+    ├── pdf/                Merits brief PDFs
+    │   └── 20221005_petitioner_New_York_State_Rifle_a3f2b1.pdf
+    ├── json/               Brief metadata + extracted text (JSON)
+    │   └── 20221005_petitioner_New_York_State_Rifle_a3f2b1.json
+    └── transcription/      Oyez oral argument transcript
+        └── 22-300__corpus.json
+
+output/
+├── logs/scraper_output.log
+└── all_cases_similarity_*.jsonl
+```
+
+---
+
+## Crawler (`scripts/crawler.py`)
+
+### Arguments
+
+| Argument | Default | Description |
+|----------|---------|-------------|
+| `--all-cases` | — | Auto-discover cases via Oyez API |
+| `--term YEAR [YEAR]` | — | Limit to one year or a range, e.g. `--term 2023` or `--term 1997 2003` |
+| `--queries-json FILE` | — | JSONL file with `docket_no` fields (alternative to `--all-cases`) |
+| `--output-dir DIR` | `./data` | Root output directory |
+| `--min-interval SEC` | `1.5` | Seconds between requests |
+| `--min-year YEAR` | `1900` | Skip cases before this year (e.g. `--min-year 2000`) |
+
+### Document Filtering
+
+Only downloads documents that:
+- ✅ Are a petitioner, respondent, or amicus/amici curiae brief
+- ✅ Are from cases with `YY-####` docket format
+- ❌ Excludes motions, certificates, proof of service, letters
+
+### Filename Format
+
+```
+{YYYYMMDD}_{role}_{party_name}_{hash6}.pdf
+```
+Example: `20221005_amicus_Mountain_States_Legal_Foundation_b7c3d2.pdf`
+
+---
+
+## Oyez Scraper (`scripts/oyez_scraper.py`)
+
+### Arguments
+
+| Argument | Default | Description |
+|----------|---------|-------------|
+| `--all-cases` | — | Fetch all cases from Oyez API (paginated) |
+| `--term YEAR [YEAR]` | — | One year or range, e.g. `--term 2023` or `--term 1997 2003` |
+| `--cases DOCKET ...` | — | Specific dockets, e.g. `22-300 21-476` |
+| `--data-dir DIR` | `./data` | Root data directory |
+| `--min-interval SEC` | `1.5` | Seconds between API requests |
+| `--overwrite` | `False` | Overwrite existing transcript files |
+
+Transcripts are saved to `data/{docket}/transcription/{docket}__corpus.json`.
+
+---
+
+## Similarity Analysis (`scripts/process_similarity.py`)
+
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `--all-cases` | - | Process all cases in data directory |
-| `--cases` | - | Specific case numbers to process |
-| `--model` | `all-MiniLM-L6-v2` | Embedding model name |
+| `--all-cases` | — | Process all cases in data directory |
+| `--cases` | — | Specific dockets |
+| `--model` | `all-MiniLM-L6-v2` | Sentence-Transformers model |
 | `--chunk-size` | `1200` | Text chunk size (words) |
 | `--overlap` | `200` | Chunk overlap (words) |
-| `--output` | `similarity_results.jsonl` | Output file path |
+| `--output` | `similarity_results.jsonl` | Output file |
 
-### Available Models
-| Model | Speed | Quality | Dimensions | Use Case |
-|-------|-------|---------|------------|----------|
-| `all-MiniLM-L6-v2` (default) | ⚡⚡⚡ | ⭐⭐⭐ | 384 | Fast testing, large batches |
-| `all-mpnet-base-v2` | ⚡⚡ | ⭐⭐⭐⭐⭐ | 768 | Best accuracy, final results |
-| `paraphrase-MiniLM-L6-v2` | ⚡⚡⚡ | ⭐⭐⭐ | 384 | Paraphrase detection |
-
-### Output Format
-```json
-{
-  "case": "17-773",
-  "num_brief_docs": 5,
-  "num_brief_chunks": 234,
-  "num_oral_chunks": 156,
-  "avg_brief_oral_cosine": 0.6234,
-  "empty_brief_samples": []
-}
-```
-
-**Key metric:** `avg_brief_oral_cosine` (0-1, higher = more similar)
-
-## How It Works
-
-### Similarity Calculation Method
-
-**Vectorization:**
-- Neural embeddings 
-
-**Similarity Metric:**
-```
-For each brief chunk i:
-  Find max similarity with all oral chunks j
-Average these max similarities
-```
-
-This approach is more robust than simple averaging, focusing on best matches rather than being diluted by irrelevant content.
+**Output metric:** `avg_brief_oral_cosine` (0–1, higher = more similar)
 
 ---
 
 ## Tips & Troubleshooting
 
-### Crawler Tips
-- Use `--min-interval 2.0` for large batches to be respectful of the server
-- Check `output/scraper_output.log` for detailed logs
-- The scraper skips cases before 2001 and "A-number" dockets
-
-### Similarity Analysis Tips
-- First run downloads the model (~90MB for default, ~420MB for MPNet)
-- Use `--chunk-size 800` if you encounter memory errors
-- Failed cases will have an `"error"` field in the output
-
-### Common Issues
-
-**ModuleNotFoundError: sentence_transformers**
-```bash
-pip install sentence-transformers
-```
-
-**No briefs found for case**
-- Case may be pre-2001, an emergency application, or not yet at merits stage
-
-**Empty text extraction**
-```bash
-python3 scripts/crawler.py --queries-json cases.jsonl --output-dir ./data --site scotus --enable-ocr 1
-```
-
----
-
-## Complete Workflow Example
-
-```bash
-# 1. Create input file
-cat > my_cases.jsonl << EOF
-{"docket_no": "17-773"}
-{"docket_no": "17-21"}
-EOF
-
-# 2. Download briefs
-python3 scripts/crawler.py \
-  --queries-json my_cases.jsonl \
-  --output-dir ./data \
-  --site scotus
-
-# 3. Analyze similarity
-python3 scripts/process_similarity.py \
-  --all-cases \
-  --output "similarity_results.jsonl"
-
-# 4. Check results
-cat similarity_results.jsonl | python3 -m json.tool
-```
-
----
-
-## Document Filtering
-
-The crawler only downloads documents that:
-- ✅ Are marked as "Main Document"
-- ✅ Contain "brief" or "reply" in description
-- ✅ Are from cases with YY-#### format (e.g., 17-130)
-- ❌ Skips certificates, proof of service, amicus briefs, motions
+- Use `--min-interval 2.0` for large batches to be polite to servers
+- Use `--min-year 2000` on the crawler to skip very old cases that have no PDFs
+- Logs are written to `output/logs/scraper_output.log`
+- First similarity run downloads the model (~90 MB for default, ~420 MB for MPNet)
 
 ---
 
