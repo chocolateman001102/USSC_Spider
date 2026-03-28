@@ -48,15 +48,23 @@ py scripts/combined_scraper.py --all-cases --min-year 2000
 
 ### 3. Analyze Similarity
 
+> [!IMPORTANT]
+> **Nvdia GPU:** NVDIA graphic cards is necessary to utilize NVIDIA CUDA acceleration smoothly. If you do not have one, CPU driven runtime approximates to 10x slower(maybe 6+ hours, personally I never finished running it, be sure not to crtl+C in terminal, which would interrupt the process and you have to start afresh).
+
+Results are automatically livestreamed and saved to the `output/` directory (e.g., `output/all_cases_similarity_mpnet.jsonl`), so you will not lose data if a large run is interrupted!
+
 ```bash
-# All cases
-py scripts/process_similarity.py --all-cases --output similarity_results.jsonl
+# All cases (Fastest default model)
+py scripts/process_similarity.py --all-cases 
+py -3.12 scripts/process_similarity.py --all-cases # if you have 2+ versions of Python, specify python version.
 
-# Specific cases
-py scripts/process_similarity.py --cases 22-300 21-476 --output results.jsonl
+# Specific dockets
+py scripts/process_similarity.py --cases 22-300 21-476 
+py -3.12 scripts/process_similarity.py --cases 22-300 21-476 
 
-# Higher-quality model (slower)
-py scripts/process_similarity.py --all-cases --model all-mpnet-base-v2 --output results.jsonl
+# Higher-quality model (Slower, recommended only with GPU)
+py scripts/process_similarity.py --cases 22-300 21-476 
+py -3.12 scripts/process_similarity.py --all-cases --model all-mpnet-base-v2
 ```
 
 ---
@@ -132,11 +140,12 @@ DONE  total=N  both_found=N  skip_no_transcript=N  skip_no_briefs=N  failed=N
 | `--all-cases` | — | Process all cases in data directory |
 | `--cases` | — | Specific dockets |
 | `--model` | `all-MiniLM-L6-v2` | Sentence-Transformers model |
-| `--chunk-size` | `1200` | Text chunk size (words) |
+| `--chunk-size` | `800` | Text chunk size (words) |
 | `--overlap` | `200` | Chunk overlap (words) |
-| `--output` | `similarity_results.jsonl` | Output file |
 
-**Output metric:** `avg_brief_oral_cosine` (0–1, higher = more similar)
+**Output metrics (0–1, higher = more similar):** 
+- `avg_brief_oral_cosine_mean` (The total average overlap of all text)
+- `avg_brief_oral_cosine_max` (The average of the best-matching arguments)
 
 ---
 

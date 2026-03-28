@@ -13,7 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 #################################################################### 
 # 使用方法：使用terminal运行以下命令
 # 例如："分析案例17-773和17-21:
-# python3 process_similarity.py --cases 17-773 17-21 --output "test_results.jsonl" 
+# python3 process_similarity.py --cases 17-773 17-21
 ####################################################################
 
 # Issues:
@@ -146,9 +146,13 @@ def process_case(case_dir: Path, chunk_size: int, overlap: int, model: SentenceT
     if not json_dir.exists():
         return {'case': case_dir.name, 'error': 'missing json dir'}
     # Find corpus
-    corpus_files = list(json_dir.glob(f"{case_dir.name}__corpus.json"))
+    transcription_dir = case_dir / 'transcription'
+    corpus_files = list(transcription_dir.glob(f"{case_dir.name}__corpus.json"))
     if not corpus_files:
-        return {'case': case_dir.name, 'error': 'missing corpus json'}
+        # Fallback to json dir for older structured data if needed
+        corpus_files = list(json_dir.glob(f"{case_dir.name}__corpus.json"))
+        if not corpus_files:
+            return {'case': case_dir.name, 'error': 'missing corpus json'}
     
     try:
         oral_text = extract_oral_argument_text(corpus_files[0])
@@ -239,14 +243,6 @@ def main():
     model = SentenceTransformer(args.model)
     print("Model loaded successfully.\n")
 
-    results = []
-    for idx, case in enumerate(cases, 1):
-        print(f"[{idx}/{len(cases)}] Processing case: {case}")
-        case_dir = data_root / case
-        res = process_case(case_dir, chunk_size=args.chunk_size, overlap=args.overlap, model=model)
-        results.append(res)
-        print()
-
     # Generate output filename based on model and scope
     project_root = Path(__file__).resolve().parents[1]
     output_dir = project_root / 'output'
@@ -264,9 +260,21 @@ def main():
     output_filename = f"{scope}_similarity_{model_short}.jsonl"
     out_path = output_dir / output_filename
     
-    with out_path.open('w', encoding='utf-8') as f:
-        for r in results:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    print(f"Streaming results live to: {out_path}\n")
+
+    results = []
+    # Open in append mode so if interrupted, you can resume without losing prior cases
+    with out_path.open('a', encoding='utf-8') as f:
+        for idx, case in enumerate(cases, 1):
+            print(f"[{idx}/{len(cases)}] Processing case: {case}")
+            case_dir = data_root / case
+            res = process_case(case_dir, chunk_size=args.chunk_size, overlap=args.overlap, model=model)
+            results.append(res)
+            
+            # Stream directly to JSONL and flush to disk immediately
+            f.write(json.dumps(res, ensure_ascii=False) + '\n')
+            f.flush()
+            print()
 
     print(f"\n{'='*60}")
     print(f"✓ Results saved to: {out_path}")
