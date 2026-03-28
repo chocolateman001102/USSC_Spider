@@ -1,0 +1,969 @@
+2026-03-28 09:37:12,935 INFO ============================================================
+2026-03-28 09:37:12,935 INFO [1/1] Processing: 22-915
+2026-03-28 09:37:17,321 INFO Found case 22-915 in term 2023 on Oyez
+2026-03-28 09:37:17,812 INFO Found 72 brief doc(s) for 22-915 on SCOTUS
+2026-03-28 09:37:17,812 INFO [22-915] Both sources confirmed — downloading 72 brief(s) + transcript
+2026-03-28 09:37:19,626 INFO [22-915] Brief 1/72 saved → data\22-915\json\20230420_amicus_California_Governor_Gavin_Newsom_bfdd55.json
+2026-03-28 09:37:21,859 INFO [22-915] Brief 2/72 saved → data\22-915\json\20230420_amicus_Texas_Advocacy_Project_a25ed6.json
+2026-03-28 09:37:23,743 INFO [22-915] Brief 3/72 saved → data\22-915\json\20230420_amici_Gun_Violence_Domestic_Violence_Prevention_027f1d.json
+2026-03-28 09:37:25,717 INFO [22-915] Brief 4/72 saved → data\22-915\json\20230420_amicus_New_York_County_Lawyers_Association_c5bea3.json
+2026-03-28 09:38:18,857 INFO [22-915] Brief 5/72 saved → data\22-915\json\20230420_amici_Illinois_9f467f.json
+2026-03-28 09:38:21,684 INFO [22-915] Brief 6/72 saved → data\22-915\json\20230420_amici_Joshua_Horwitz_6eefbe.json
+2026-03-28 09:38:24,413 INFO [22-915] Brief 7/72 saved → data\22-915\json\20230420_amici_Tarrant_County_Criminal_District_Attorney_b7867c.json
+2026-03-28 09:38:26,817 INFO [22-915] Brief 8/72 saved → data\22-915\json\20230530_respondent_Zackey_Rahimi_opposition_335515.json
+2026-03-28 09:38:28,984 INFO [22-915] Brief 9/72 saved → data\22-915\json\20230606_reply_US_1d828d.json
+2026-03-28 09:38:31,909 INFO [22-915] Brief 10/72 saved → data\22-915\json\20230814_petitioner_US_62b81b.json
+2026-03-28 09:38:33,917 INFO [22-915] Brief 11/72 saved → data\22-915\json\20230817_amicus_Patrick_Charles_support_neither_580bff.json
+2026-03-28 09:38:36,080 INFO [22-915] Brief 12/72 saved → data\22-915\json\20230818_amicus_97Percent_684941.json
+2026-03-28 09:38:38,082 INFO [22-915] Brief 13/72 saved → data\22-915\json\20230818_amicus_California_Legislative_Women's_Caucus_df3d02.json
+2026-03-28 09:38:40,298 INFO [22-915] Brief 14/72 saved → data\22-915\json\20230821_amici_City_New_York_a0f9a1.json
+2026-03-28 09:38:42,441 INFO [22-915] Brief 15/72 saved → data\22-915\json\20230821_amici_National_Indigenous_Women's_Resource_Center_29a480.json
+2026-03-28 09:38:44,777 INFO [22-915] Brief 16/72 saved → data\22-915\json\20230821_amici_Second_Amendment_Law_Scholars_270421.json
+2026-03-28 09:38:46,991 INFO [22-915] Brief 17/72 saved → data\22-915\json\20230821_amici_Educators_Practitioners_fd1ad7.json
+2026-03-28 09:38:51,665 INFO [22-915] Brief 18/72 saved → data\22-915\json\20230821_amici_Tarrant_County_Criminal_District_Attorney_dd0c9d.json
+2026-03-28 09:38:54,281 INFO [22-915] Brief 19/72 saved → data\22-915\json\20230821_amicus_New_York_County_Lawyers_Association_5ebcdb.json
+2026-03-28 09:38:56,487 INFO [22-915] Brief 20/72 saved → data\22-915\json\20230821_amici_Professors_History_Law_5e10ea.json
+2026-03-28 09:38:58,877 INFO [22-915] Brief 21/72 saved → data\22-915\json\20230821_amici_Legal_Aid_Chicago_9b5dae.json
+2026-03-28 09:39:00,947 INFO [22-915] Brief 22/72 saved → data\22-915\json\20230821_amici_Religious_Leaders_Organizations_e9d811.json
+2026-03-28 09:39:03,134 INFO [22-915] Brief 23/72 saved → data\22-915\json\20230821_amici_DC_Coalition_Against_Domestic_Violence_05b514.json
+2026-03-28 09:39:05,315 INFO [22-915] Brief 24/72 saved → data\22-915\json\20230821_amici_Illinois_4f6a9d.json
+2026-03-28 09:39:07,414 INFO [22-915] Brief 25/72 saved → data\22-915\json\20230821_amici_National_League_Cities_bccc58.json
+2026-03-28 09:39:09,902 INFO [22-915] Brief 26/72 saved → data\22-915\json\20230821_amicus_Center_Reproductive_Rights_e85649.json
+2026-03-28 09:39:12,318 INFO [22-915] Brief 27/72 saved → data\22-915\json\20230821_amici_Senator_Richard_Blumenthal_151766.json
+2026-03-28 09:39:14,207 INFO [22-915] Brief 28/72 saved → data\22-915\json\20230821_amici_Senator_Amy_Klobuchar_b485ae.json
+2026-03-28 09:39:16,515 INFO [22-915] Brief 29/72 saved → data\22-915\json\20230821_amici_Gun_Violence_Domestic_Violence_Prevention_bed673.json
+2026-03-28 09:39:19,277 INFO [22-915] Brief 30/72 saved → data\22-915\json\20230821_amici_Public-Health_Researchers_Lawyers_78d9b8.json
+2026-03-28 09:39:21,256 INFO [22-915] Brief 31/72 saved → data\22-915\json\20230821_amicus_ACLU_Foundation_58bca0.json
+2026-03-28 09:39:23,729 INFO [22-915] Brief 32/72 saved → data\22-915\json\20230821_amici_Former_State_Chief_Justices_Chief_bd4676.json
+2026-03-28 09:39:25,716 INFO [22-915] Brief 33/72 saved → data\22-915\json\20230821_amici_Global_Action_Gun_Violence_e20d86.json
+2026-03-28 09:39:28,294 INFO [22-915] Brief 34/72 saved → data\22-915\json\20230821_amicus_Prosecutors_Against_Gun_Violence_83c1f8.json
+2026-03-28 09:39:30,516 INFO [22-915] Brief 35/72 saved → data\22-915\json\20230821_amicus_California_Governor_Gavin_Newsom_d871ef.json
+2026-03-28 09:39:33,295 INFO [22-915] Brief 36/72 saved → data\22-915\json\20230821_amicus_March_Our_Lives_Action_Fund_7e6f71.json
+2026-03-28 09:39:35,057 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,069 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,078 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,089 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,099 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,110 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,116 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,132 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,147 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,161 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,177 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,193 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,206 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,221 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,237 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,253 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,270 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,286 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:35,294 INFO [22-915] Brief 37/72 saved → data\22-915\json\20230821_amicus_AEquitas_1157f4.json
+2026-03-28 09:39:37,741 INFO [22-915] Brief 38/72 saved → data\22-915\json\20230821_amicus_Giffords_Law_Center_Prevent_5487b6.json
+2026-03-28 09:39:40,317 INFO [22-915] Brief 39/72 saved → data\22-915\json\20230821_amici_Texas_Advocacy_Project_52c3cf.json
+2026-03-28 09:39:41,880 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,891 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,908 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,923 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,939 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,953 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,965 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,982 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:41,990 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,006 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,025 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,046 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,063 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,082 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,099 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,116 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,136 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,168 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,194 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,213 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,233 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,253 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,269 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,291 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,316 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,333 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:42,346 INFO [22-915] Brief 40/72 saved → data\22-915\json\20230821_amicus_Citizens_Crime_Commission_New_York_683cad.json
+2026-03-28 09:39:44,525 INFO [22-915] Brief 41/72 saved → data\22-915\json\20230821_amicus_US_Conference_Catholic_Bishops_b47a72.json
+2026-03-28 09:39:46,323 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,328 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,334 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,340 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,345 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,351 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,358 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,367 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,374 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,381 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,388 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,396 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,403 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,410 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,417 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,426 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,433 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,440 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,447 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,454 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,462 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,468 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,474 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,482 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,489 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,497 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,504 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,511 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,520 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,528 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,535 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,543 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,551 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,559 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,567 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,575 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,583 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,591 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,598 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,604 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,612 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,620 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,628 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,635 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,639 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:46,643 INFO [22-915] Brief 42/72 saved → data\22-915\json\20230821_amicus_Professor_Mary_Anne_Franks_60d539.json
+2026-03-28 09:39:48,802 INFO [22-915] Brief 43/72 saved → data\22-915\json\20230821_amicus_Houston_Area_Womenâs_Center_2ed581.json
+2026-03-28 09:39:50,845 INFO [22-915] Brief 44/72 saved → data\22-915\json\20230821_amicus_Everytown_Gun_Safety_d73248.json
+2026-03-28 09:39:52,778 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,786 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,793 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,798 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,804 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,809 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,814 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,820 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,826 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,831 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,836 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,844 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,850 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,857 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,863 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,869 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,875 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,882 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,888 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,897 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,904 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,911 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,919 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,926 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,942 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,949 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,956 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,963 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,969 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,976 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,984 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,991 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:52,997 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,003 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,010 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,017 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,024 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,032 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,039 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,044 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:39:53,049 INFO [22-915] Brief 45/72 saved → data\22-915\json\20230821_amici_Prosecutor_Law_Enforcement_Associations_66b68c.json
+2026-03-28 09:39:55,880 INFO [22-915] Brief 46/72 saved → data\22-915\json\20230821_amici_American_Medical_Association_5c4cc5.json
+2026-03-28 09:39:57,991 INFO [22-915] Brief 47/72 saved → data\22-915\json\20230821_amici_Domestic_Violence_Legal_Empowerment_Appeals_d8b8e3.json
+2026-03-28 09:40:00,653 INFO [22-915] Brief 48/72 saved → data\22-915\json\20230822_amicus_Americans_Against_Gun_Violence_68ea68.json
+2026-03-28 09:40:02,656 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,670 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,750 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,755 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,769 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,781 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,797 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,810 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,820 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,826 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,838 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,849 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,862 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,875 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,888 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,901 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,915 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,927 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,939 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,953 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,967 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,978 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:02,993 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,005 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,014 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,023 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,036 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,048 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,060 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,072 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,085 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,095 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,108 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,125 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,136 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,148 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,158 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,170 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,181 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,191 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:03,201 INFO [22-915] Brief 49/72 saved → data\22-915\json\20230922_amicus_Center_Prosecutor_Integrity_(Distributed)_bc6e1a.json
+2026-03-28 09:40:05,439 INFO [22-915] Brief 50/72 saved → data\22-915\json\20230927_respondent_Zackey_Rahimi_14af34.json
+2026-03-28 09:40:07,491 INFO [22-915] Brief 51/72 saved → data\22-915\json\20231002_amicus_National_Association_Gun_Rights_(Distributed)_039e78.json
+2026-03-28 09:40:09,125 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,141 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,147 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,160 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,182 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,200 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,216 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,235 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,251 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,268 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,286 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,304 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,323 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,340 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,355 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,376 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,391 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,404 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:09,417 INFO [22-915] Brief 52/72 saved → data\22-915\json\20231003_amici_Cato_Institute_(Distributed)_b0c093.json
+2026-03-28 09:40:11,678 INFO [22-915] Brief 53/72 saved → data\22-915\json\20231003_amici_Alameda_County_Public_Defenders_475be7.json
+2026-03-28 09:40:13,779 INFO [22-915] Brief 54/72 saved → data\22-915\json\20231003_amicus_Professor_Nicholas_Johnson_(Distributed)_8ce668.json
+2026-03-28 09:40:15,956 INFO [22-915] Brief 55/72 saved → data\22-915\json\20231003_amici_Phyllis_Schlafly_Eagles_Eagle_Forum_f56631.json
+2026-03-28 09:40:18,614 INFO [22-915] Brief 56/72 saved → data\22-915\json\20231004_amici_Bronx_Defenders_Union_National_Association_1a3368.json
+2026-03-28 09:40:20,297 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,319 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,335 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,344 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,362 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,381 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,400 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,425 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,450 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,475 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,496 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,520 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,540 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,561 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,581 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,599 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,619 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,638 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,658 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,677 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,681 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,698 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,715 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,736 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,755 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,776 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,798 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,819 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,842 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,865 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,885 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,907 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,937 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,961 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:20,987 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,012 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,034 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,056 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,076 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,096 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,117 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,136 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,155 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,190 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,215 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,239 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,261 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,281 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,302 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,323 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,343 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,361 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,380 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,390 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:21,400 INFO [22-915] Brief 57/72 saved → data\22-915\json\20231004_amicus_California_Rifle_Pistol_Association_Inc_da29ba.json
+2026-03-28 09:40:23,616 INFO [22-915] Brief 58/72 saved → data\22-915\json\20231004_amicus_National_Association_Federal_Defenders_(Distributed)_4c7cc6.json
+2026-03-28 09:40:25,996 INFO [22-915] Brief 59/72 saved → data\22-915\json\20231004_amici_Professors_Second_Amendment_Law_14c8fa.json
+2026-03-28 09:40:28,476 INFO [22-915] Brief 60/72 saved → data\22-915\json\20231004_amicus_FPC_Action_Foundation_(Distributed)_21f9fd.json
+2026-03-28 09:40:30,344 INFO [22-915] Brief 61/72 saved → data\22-915\json\20231004_amici_Law_Enforcement_Groups_Firearms_Rights_680a60.json
+2026-03-28 09:40:32,243 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,252 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,254 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,259 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,261 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,265 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,270 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,274 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,278 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,282 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,287 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,291 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,296 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,301 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,305 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,312 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,318 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,325 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,331 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,339 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,346 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,354 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,360 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,368 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,375 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,382 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,389 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,395 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,402 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,410 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,417 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,423 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,430 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,437 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,443 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,450 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,456 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,463 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,470 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,478 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,484 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,491 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,499 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,506 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,512 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,517 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:32,522 INFO [22-915] Brief 62/72 saved → data\22-915\json\20231004_amicus_National_African_American_Gun_Association_591cd1.json
+2026-03-28 09:40:34,347 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,368 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,382 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,401 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,411 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,432 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,448 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,463 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,477 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,491 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,505 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,520 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,535 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:34,542 INFO [22-915] Brief 63/72 saved → data\22-915\json\20231004_amicus_Foundation_Moral_Law_(Distributed)_461f29.json
+2026-03-28 09:40:36,771 INFO [22-915] Brief 64/72 saved → data\22-915\json\20231004_amicus_Firearms_Policy_Coalition_(Distributed)_30ef31.json
+2026-03-28 09:40:38,511 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,525 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,529 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,544 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,565 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,580 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,600 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,613 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,640 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,666 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,681 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,697 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,729 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,752 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,769 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,789 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,812 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,827 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,841 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,852 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,863 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,878 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,891 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,905 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,918 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,934 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,951 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,971 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:38,986 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,002 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,031 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,061 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,076 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,087 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:39,094 INFO [22-915] Brief 65/72 saved → data\22-915\json\20231004_amicus_Second_Amendment_Foundation_(Distributed)_a39409.json
+2026-03-28 09:40:41,606 INFO [22-915] Brief 66/72 saved → data\22-915\json\20231004_amicus_Angus_Kirk_McClellan_PhD_(Distributed)_e8b43e.json
+2026-03-28 09:40:43,717 INFO [22-915] Brief 67/72 saved → data\22-915\json\20231004_amicus_Center_Human_Liberty_(Distributed)_14f396.json
+2026-03-28 09:40:46,178 INFO [22-915] Brief 68/72 saved → data\22-915\json\20231004_amicus_Crime_Prevention_Research_Center_(Distributed)_a67e8f.json
+2026-03-28 09:40:48,397 INFO [22-915] Brief 69/72 saved → data\22-915\json\20231004_amicus_National_Rifle_Associationof_America_Inc_1b9d09.json
+2026-03-28 09:40:50,486 INFO [22-915] Brief 70/72 saved → data\22-915\json\20231004_amici_William_English_Ph.D_Citizens_Committee_1e9294.json
+2026-03-28 09:40:52,034 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,042 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,048 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,052 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,058 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,066 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,076 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,078 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,084 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,090 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,095 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,101 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,105 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,110 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,116 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,122 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,128 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,133 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,138 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,145 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,150 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,156 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,161 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,168 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,174 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,180 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,187 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,194 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,202 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,208 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,213 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,221 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,228 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,234 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,241 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,247 WARNING CropBox missing from /Page, defaulting to MediaBox
+2026-03-28 09:40:52,253 INFO [22-915] Brief 71/72 saved → data\22-915\json\20231004_amici_Gun_Owners_America_Inc_20921c.json
+2026-03-28 09:40:54,348 INFO [22-915] Brief 72/72 saved → data\22-915\json\20231025_reply_US_65ad07.json
+2026-03-28 09:41:04,252 INFO [22-915] Transcript saved → data\22-915\transcription\22-915__corpus.json (103580 chars)
+2026-03-28 09:41:04,252 INFO [22-915] SUCCESS: 72 brief(s) + transcript
+2026-03-28 09:41:04,252 INFO ============================================================
+2026-03-28 09:41:04,252 INFO DONE  total=1     both_found=1     skip_no_transcript=0     skip_no_briefs=0     failed=0   
+2026-03-28 09:44:01,499 INFO Discovering cases for term(s) [1997] via Oyez API…
+2026-03-28 09:44:03,377 INFO Oyez page 0: fetched 100 cases, 99 unique dockets so far
+2026-03-28 09:44:05,319 INFO Oyez page 1: fetched 2 cases, 101 unique dockets so far
+2026-03-28 09:44:07,218 INFO Discovered 101 dockets total
+2026-03-28 09:44:07,218 INFO ============================================================
+2026-03-28 09:44:07,219 INFO [1/101] Processing: 96-1395
+2026-03-28 09:44:11,836 INFO Found case 96-1395 in term 1997 on Oyez
+2026-03-28 09:44:12,714 INFO Found 0 brief doc(s) for 96-1395 on SCOTUS
+2026-03-28 09:44:12,714 INFO [96-1395] No merits briefs on SCOTUS — skipping
+2026-03-28 09:44:12,714 INFO [96-1395] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:44:12,714 INFO ============================================================
+2026-03-28 09:44:12,714 INFO [2/101] Processing: 96-1291
+2026-03-28 09:44:17,135 INFO Found case 96-1291 in term 1997 on Oyez
+2026-03-28 09:44:17,726 INFO Found 0 brief doc(s) for 96-1291 on SCOTUS
+2026-03-28 09:44:17,726 INFO [96-1291] No merits briefs on SCOTUS — skipping
+2026-03-28 09:44:17,727 INFO [96-1291] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:44:17,727 INFO ============================================================
+2026-03-28 09:44:17,727 INFO [3/101] Processing: 96-1470
+2026-03-28 09:44:22,511 INFO Found case 96-1470 in term 1997 on Oyez
+2026-03-28 09:44:23,182 INFO Found 0 brief doc(s) for 96-1470 on SCOTUS
+2026-03-28 09:44:23,182 INFO [96-1470] No merits briefs on SCOTUS — skipping
+2026-03-28 09:44:23,182 INFO [96-1470] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:44:23,183 INFO ============================================================
+2026-03-28 09:44:23,183 INFO [4/101] Processing: 96-1060
+2026-03-28 09:44:55,374 INFO Discovering cases for term(s) [2001] via Oyez API…
+2026-03-28 09:45:01,753 INFO Oyez page 0: fetched 84 cases, 83 unique dockets so far
+2026-03-28 09:45:04,499 INFO Discovered 83 dockets total
+2026-03-28 09:45:04,499 INFO ============================================================
+2026-03-28 09:45:04,499 INFO [1/83] Processing: 00-507
+2026-03-28 09:45:24,503 WARNING Error fetching https://api.oyez.org/cases/2000/00-507: HTTPSConnectionPool(host='api.oyez.org', port=443): Read timed out. (read timeout=20)
+2026-03-28 09:45:27,954 INFO Found case 00-507 in term 2001 on Oyez
+2026-03-28 09:45:28,691 INFO Found 0 brief doc(s) for 00-507 on SCOTUS
+2026-03-28 09:45:28,691 INFO [00-507] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:28,691 INFO [00-507] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:28,691 INFO ============================================================
+2026-03-28 09:45:28,691 INFO [2/83] Processing: 01-835
+2026-03-28 09:45:31,011 INFO Found case 01-835 in term 2001 on Oyez
+2026-03-28 09:45:31,011 INFO [01-835] No oral argument audio on Oyez — skipping
+2026-03-28 09:45:31,012 INFO [01-835] SKIP (no transcript): no oral_argument_audio on Oyez
+2026-03-28 09:45:31,012 INFO ============================================================
+2026-03-28 09:45:31,012 INFO [3/83] Processing: 00-1853
+2026-03-28 09:45:35,367 INFO Found case 00-1853 in term 2001 on Oyez
+2026-03-28 09:45:35,915 INFO Found 0 brief doc(s) for 00-1853 on SCOTUS
+2026-03-28 09:45:35,916 INFO [00-1853] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:35,916 INFO [00-1853] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:35,916 INFO ============================================================
+2026-03-28 09:45:35,917 INFO [4/83] Processing: 00-1089
+2026-03-28 09:45:40,009 INFO Found case 00-1089 in term 2001 on Oyez
+2026-03-28 09:45:40,547 INFO Found 0 brief doc(s) for 00-1089 on SCOTUS
+2026-03-28 09:45:40,547 INFO [00-1089] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:40,548 INFO [00-1089] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:40,548 INFO ============================================================
+2026-03-28 09:45:40,548 INFO [5/83] Processing: 00-1250
+2026-03-28 09:45:45,050 INFO Found case 00-1250 in term 2001 on Oyez
+2026-03-28 09:45:46,020 INFO Found 0 brief doc(s) for 00-1250 on SCOTUS
+2026-03-28 09:45:46,021 INFO [00-1250] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:46,021 INFO [00-1250] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:46,021 INFO ============================================================
+2026-03-28 09:45:46,021 INFO [6/83] Processing: 00-927
+2026-03-28 09:45:50,287 INFO Found case 00-927 in term 2001 on Oyez
+2026-03-28 09:45:50,940 INFO Found 0 brief doc(s) for 00-927 on SCOTUS
+2026-03-28 09:45:50,940 INFO [00-927] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:50,941 INFO [00-927] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:50,941 INFO ============================================================
+2026-03-28 09:45:50,941 INFO [7/83] Processing: 01-344
+2026-03-28 09:45:53,237 INFO Found case 01-344 in term 2001 on Oyez
+2026-03-28 09:45:53,755 INFO Found 0 brief doc(s) for 01-344 on SCOTUS
+2026-03-28 09:45:53,756 INFO [01-344] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:53,757 INFO [01-344] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:53,757 INFO ============================================================
+2026-03-28 09:45:53,758 INFO [8/83] Processing: 00-6567
+2026-03-28 09:45:57,846 INFO Found case 00-6567 in term 2001 on Oyez
+2026-03-28 09:45:58,392 INFO Found 0 brief doc(s) for 00-6567 on SCOTUS
+2026-03-28 09:45:58,393 INFO [00-6567] No merits briefs on SCOTUS — skipping
+2026-03-28 09:45:58,393 INFO [00-6567] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:45:58,394 INFO ============================================================
+2026-03-28 09:45:58,394 INFO [9/83] Processing: 01-584
+2026-03-28 09:46:00,836 INFO Found case 01-584 in term 2001 on Oyez
+2026-03-28 09:46:02,739 INFO Found 0 brief doc(s) for 01-584 on SCOTUS
+2026-03-28 09:46:02,739 INFO [01-584] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:02,740 INFO [01-584] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:02,740 INFO ============================================================
+2026-03-28 09:46:02,740 INFO [10/83] Processing: 00-1751
+2026-03-28 09:46:06,957 INFO Found case 00-1751 in term 2001 on Oyez
+2026-03-28 09:46:07,491 INFO Found 0 brief doc(s) for 00-1751 on SCOTUS
+2026-03-28 09:46:07,491 INFO [00-1751] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:07,492 INFO [00-1751] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:07,492 INFO ============================================================
+2026-03-28 09:46:07,492 INFO [11/83] Processing: 00-1406
+2026-03-28 09:46:12,057 INFO Found case 00-1406 in term 2001 on Oyez
+2026-03-28 09:46:12,582 INFO Found 0 brief doc(s) for 00-1406 on SCOTUS
+2026-03-28 09:46:12,582 INFO [00-1406] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:12,582 INFO [00-1406] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:12,583 INFO ============================================================
+2026-03-28 09:46:12,583 INFO [12/83] Processing: 00-878
+2026-03-28 09:46:17,061 INFO Found case 00-878 in term 2001 on Oyez
+2026-03-28 09:46:17,599 INFO Found 0 brief doc(s) for 00-878 on SCOTUS
+2026-03-28 09:46:17,599 INFO [00-878] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:17,599 INFO [00-878] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:17,599 INFO ============================================================
+2026-03-28 09:46:17,599 INFO [13/83] Processing: 00-1770
+2026-03-28 09:46:22,160 INFO Found case 00-1770 in term 2001 on Oyez
+2026-03-28 09:46:22,905 INFO Found 0 brief doc(s) for 00-1770 on SCOTUS
+2026-03-28 09:46:22,905 INFO [00-1770] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:22,905 INFO [00-1770] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:22,905 INFO ============================================================
+2026-03-28 09:46:22,905 INFO [14/83] Processing: 01-518
+2026-03-28 09:46:25,331 INFO Found case 01-518 in term 2001 on Oyez
+2026-03-28 09:46:25,878 INFO Found 0 brief doc(s) for 01-518 on SCOTUS
+2026-03-28 09:46:25,879 INFO [01-518] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:25,879 INFO [01-518] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:25,879 INFO ============================================================
+2026-03-28 09:46:25,879 INFO [15/83] Processing: 01-147
+2026-03-28 09:46:28,191 INFO Found case 01-147 in term 2001 on Oyez
+2026-03-28 09:46:28,730 INFO Found 0 brief doc(s) for 01-147 on SCOTUS
+2026-03-28 09:46:28,730 INFO [01-147] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:28,730 INFO [01-147] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:28,730 INFO ============================================================
+2026-03-28 09:46:28,730 INFO [16/83] Processing: 01-394
+2026-03-28 09:46:30,880 INFO Found case 01-394 in term 2001 on Oyez
+2026-03-28 09:46:31,435 INFO Found 0 brief doc(s) for 01-394 on SCOTUS
+2026-03-28 09:46:31,435 INFO [01-394] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:31,435 INFO [01-394] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:31,435 INFO ============================================================
+2026-03-28 09:46:31,435 INFO [17/83] Processing: 01-131
+2026-03-28 09:46:34,015 INFO Found case 01-131 in term 2001 on Oyez
+2026-03-28 09:46:34,599 INFO Found 0 brief doc(s) for 01-131 on SCOTUS
+2026-03-28 09:46:34,599 INFO [01-131] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:34,599 INFO [01-131] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:34,600 INFO ============================================================
+2026-03-28 09:46:34,600 INFO [18/83] Processing: 01-332
+2026-03-28 09:46:37,172 INFO Found case 01-332 in term 2001 on Oyez
+2026-03-28 09:46:37,737 INFO Found 0 brief doc(s) for 01-332 on SCOTUS
+2026-03-28 09:46:37,737 INFO [01-332] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:37,737 INFO [01-332] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:37,737 INFO ============================================================
+2026-03-28 09:46:37,737 INFO [19/83] Processing: 00-952
+2026-03-28 09:46:42,593 INFO Found case 00-952 in term 2001 on Oyez
+2026-03-28 09:46:43,102 INFO Found 0 brief doc(s) for 00-952 on SCOTUS
+2026-03-28 09:46:43,102 INFO [00-952] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:43,102 INFO [00-952] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:43,102 INFO ============================================================
+2026-03-28 09:46:43,102 INFO [20/83] Processing: 00-9280
+2026-03-28 09:46:47,739 INFO Found case 00-9280 in term 2001 on Oyez
+2026-03-28 09:46:48,371 INFO Found 0 brief doc(s) for 00-9280 on SCOTUS
+2026-03-28 09:46:48,371 INFO [00-9280] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:48,371 INFO [00-9280] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:48,371 INFO ============================================================
+2026-03-28 09:46:48,371 INFO [21/83] Processing: 00-10666
+2026-03-28 09:46:54,409 INFO Found case 00-10666 in term 2001 on Oyez
+2026-03-28 09:46:54,926 INFO Found 0 brief doc(s) for 00-10666 on SCOTUS
+2026-03-28 09:46:54,926 INFO [00-10666] No merits briefs on SCOTUS — skipping
+2026-03-28 09:46:54,926 INFO [00-10666] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:46:54,926 INFO ============================================================
+2026-03-28 09:46:54,926 INFO [22/83] Processing: 00-1214
+2026-03-28 09:46:59,903 INFO Found case 00-1214 in term 2001 on Oyez
+2026-03-28 09:47:00,418 INFO Found 0 brief doc(s) for 00-1214 on SCOTUS
+2026-03-28 09:47:00,418 INFO [00-1214] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:00,418 INFO [00-1214] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:00,418 INFO ============================================================
+2026-03-28 09:47:00,418 INFO [23/83] Processing: 00-1187
+2026-03-28 09:47:05,634 INFO Found case 00-1187 in term 2001 on Oyez
+2026-03-28 09:47:06,173 INFO Found 0 brief doc(s) for 00-1187 on SCOTUS
+2026-03-28 09:47:06,174 INFO [00-1187] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:06,174 INFO [00-1187] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:06,174 INFO ============================================================
+2026-03-28 09:47:06,174 INFO [24/83] Processing: 01-46
+2026-03-28 09:47:08,700 INFO Found case 01-46 in term 2001 on Oyez
+2026-03-28 09:47:09,221 INFO Found 0 brief doc(s) for 01-46 on SCOTUS
+2026-03-28 09:47:09,221 INFO [01-46] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:09,222 INFO [01-46] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:09,222 INFO ============================================================
+2026-03-28 09:47:09,222 INFO [25/83] Processing: 00-9285
+2026-03-28 09:47:13,762 INFO Found case 00-9285 in term 2001 on Oyez
+2026-03-28 09:47:15,870 INFO Found 0 brief doc(s) for 00-9285 on SCOTUS
+2026-03-28 09:47:15,871 INFO [00-9285] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:15,871 INFO [00-9285] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:15,871 INFO ============================================================
+2026-03-28 09:47:15,871 INFO [26/83] Processing: 01-687
+2026-03-28 09:47:18,246 INFO Found case 01-687 in term 2001 on Oyez
+2026-03-28 09:47:18,761 INFO Found 0 brief doc(s) for 01-687 on SCOTUS
+2026-03-28 09:47:18,761 INFO [01-687] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:18,761 INFO [01-687] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:18,761 INFO ============================================================
+2026-03-28 09:47:18,761 INFO [27/83] Processing: 00-1021
+2026-03-28 09:47:23,442 INFO Found case 00-1021 in term 2001 on Oyez
+2026-03-28 09:47:23,962 INFO Found 0 brief doc(s) for 00-1021 on SCOTUS
+2026-03-28 09:47:23,962 INFO [00-1021] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:23,962 INFO [00-1021] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:23,962 INFO ============================================================
+2026-03-28 09:47:23,962 INFO [28/83] Processing: 00-1249
+2026-03-28 09:47:28,344 INFO Found case 00-1249 in term 2001 on Oyez
+2026-03-28 09:47:28,845 INFO Found 0 brief doc(s) for 00-1249 on SCOTUS
+2026-03-28 09:47:28,845 INFO [00-1249] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:28,845 INFO [00-1249] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:28,845 INFO ============================================================
+2026-03-28 09:47:28,845 INFO [29/83] Processing: 01-339
+2026-03-28 09:47:30,987 INFO Found case 01-339 in term 2001 on Oyez
+2026-03-28 09:47:30,988 INFO [01-339] No oral argument audio on Oyez — skipping
+2026-03-28 09:47:30,988 INFO [01-339] SKIP (no transcript): no oral_argument_audio on Oyez
+2026-03-28 09:47:30,988 INFO ============================================================
+2026-03-28 09:47:30,988 INFO [30/83] Processing: 01-1471
+2026-03-28 09:47:33,454 INFO Found case 01-1471 in term 2001 on Oyez
+2026-03-28 09:47:33,454 INFO [01-1471] No oral argument audio on Oyez — skipping
+2026-03-28 09:47:33,454 INFO [01-1471] SKIP (no transcript): no oral_argument_audio on Oyez
+2026-03-28 09:47:33,454 INFO ============================================================
+2026-03-28 09:47:33,454 INFO [31/83] Processing: 00-730
+2026-03-28 09:47:38,019 INFO Found case 00-730 in term 2001 on Oyez
+2026-03-28 09:47:38,548 INFO Found 0 brief doc(s) for 00-730 on SCOTUS
+2026-03-28 09:47:38,548 INFO [00-730] No merits briefs on SCOTUS — skipping
+2026-03-28 09:47:38,548 INFO [00-730] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:47:38,549 INFO ============================================================
+2026-03-28 09:47:38,549 INFO [32/83] Processing: 99-1823
+2026-03-28 09:47:46,708 INFO No case found on Oyez for 99-1823
+2026-03-28 09:47:46,708 INFO [99-1823] SKIP (no transcript): docket not found on Oyez
+2026-03-28 09:47:46,708 INFO ============================================================
+2026-03-28 09:47:46,709 INFO [33/83] Processing: 01-1385
+2026-03-28 09:47:48,874 INFO Found case 01-1385 in term 2001 on Oyez
+2026-03-28 09:47:48,874 INFO [01-1385] No oral argument audio on Oyez — skipping
+2026-03-28 09:47:48,874 INFO [01-1385] SKIP (no transcript): no oral_argument_audio on Oyez
+2026-03-28 09:47:48,874 INFO ============================================================
+2026-03-28 09:47:48,874 INFO [34/83] Processing: 99-1786
+2026-03-28 09:47:57,317 INFO No case found on Oyez for 99-1786
+2026-03-28 09:47:57,318 INFO [99-1786] SKIP (no transcript): docket not found on Oyez
+2026-03-28 09:47:57,318 INFO ============================================================
+2026-03-28 09:47:57,318 INFO [35/83] Processing: 01-301
+2026-03-28 09:47:59,538 INFO Found case 01-301 in term 2001 on Oyez
+2026-03-28 09:48:00,075 INFO Found 0 brief doc(s) for 01-301 on SCOTUS
+2026-03-28 09:48:00,076 INFO [01-301] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:00,076 INFO [01-301] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:00,076 INFO ============================================================
+2026-03-28 09:48:00,076 INFO [36/83] Processing: 00-853
+2026-03-28 09:48:05,140 INFO Found case 00-853 in term 2001 on Oyez
+2026-03-28 09:48:05,646 INFO Found 0 brief doc(s) for 00-853 on SCOTUS
+2026-03-28 09:48:05,646 INFO [00-853] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:05,646 INFO [00-853] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:05,646 INFO ============================================================
+2026-03-28 09:48:05,646 INFO [37/83] Processing: 00-1045
+2026-03-28 09:48:10,263 INFO Found case 00-1045 in term 2001 on Oyez
+2026-03-28 09:48:10,837 INFO Found 0 brief doc(s) for 00-1045 on SCOTUS
+2026-03-28 09:48:10,837 INFO [00-1045] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:10,837 INFO [00-1045] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:10,837 INFO ============================================================
+2026-03-28 09:48:10,837 INFO [38/83] Processing: 00-1937
+2026-03-28 09:48:15,868 INFO Found case 00-1937 in term 2001 on Oyez
+2026-03-28 09:48:16,397 INFO Found 0 brief doc(s) for 00-1937 on SCOTUS
+2026-03-28 09:48:16,397 INFO [00-1937] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:16,397 INFO [00-1937] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:16,397 INFO ============================================================
+2026-03-28 09:48:16,398 INFO [39/83] Processing: 01-488
+2026-03-28 09:48:18,654 INFO Found case 01-488 in term 2001 on Oyez
+2026-03-28 09:48:19,191 INFO Found 0 brief doc(s) for 01-488 on SCOTUS
+2026-03-28 09:48:19,191 INFO [01-488] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:19,191 INFO [01-488] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:19,191 INFO ============================================================
+2026-03-28 09:48:19,191 INFO [40/83] Processing: 00-1595
+2026-03-28 09:48:23,871 INFO Found case 00-1595 in term 2001 on Oyez
+2026-03-28 09:48:24,367 INFO Found 0 brief doc(s) for 00-1595 on SCOTUS
+2026-03-28 09:48:24,367 INFO [00-1595] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:24,367 INFO [00-1595] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:24,367 INFO ============================================================
+2026-03-28 09:48:24,367 INFO [41/83] Processing: 00-1307
+2026-03-28 09:48:28,836 INFO Found case 00-1307 in term 2001 on Oyez
+2026-03-28 09:48:29,359 INFO Found 0 brief doc(s) for 00-1307 on SCOTUS
+2026-03-28 09:48:29,359 INFO [00-1307] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:29,359 INFO [00-1307] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:29,359 INFO ============================================================
+2026-03-28 09:48:29,359 INFO [42/83] Processing: 01-408
+2026-03-28 09:48:31,583 INFO Found case 01-408 in term 2001 on Oyez
+2026-03-28 09:48:32,817 INFO Found 0 brief doc(s) for 01-408 on SCOTUS
+2026-03-28 09:48:32,818 INFO [01-408] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:32,819 INFO [01-408] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:32,819 INFO ============================================================
+2026-03-28 09:48:32,819 INFO [43/83] Processing: 00-957
+2026-03-28 09:48:37,420 INFO Found case 00-957 in term 2001 on Oyez
+2026-03-28 09:48:37,953 INFO Found 0 brief doc(s) for 00-957 on SCOTUS
+2026-03-28 09:48:37,954 INFO [00-957] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:37,955 INFO [00-957] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:37,955 INFO ============================================================
+2026-03-28 09:48:37,955 INFO [44/83] Processing: 00-1543
+2026-03-28 09:48:43,167 INFO Found case 00-1543 in term 2001 on Oyez
+2026-03-28 09:48:43,700 INFO Found 0 brief doc(s) for 00-1543 on SCOTUS
+2026-03-28 09:48:43,700 INFO [00-1543] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:43,701 INFO [00-1543] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:43,701 INFO ============================================================
+2026-03-28 09:48:43,701 INFO [45/83] Processing: 01-463
+2026-03-28 09:48:46,100 INFO Found case 01-463 in term 2001 on Oyez
+2026-03-28 09:48:46,628 INFO Found 0 brief doc(s) for 01-463 on SCOTUS
+2026-03-28 09:48:46,628 INFO [01-463] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:46,629 INFO [01-463] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:46,629 INFO ============================================================
+2026-03-28 09:48:46,629 INFO [46/83] Processing: 01-651
+2026-03-28 09:48:48,901 INFO Found case 01-651 in term 2001 on Oyez
+2026-03-28 09:48:49,471 INFO Found 0 brief doc(s) for 01-651 on SCOTUS
+2026-03-28 09:48:49,471 INFO [01-651] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:49,471 INFO [01-651] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:49,472 INFO ============================================================
+2026-03-28 09:48:49,472 INFO [47/83] Processing: 00-1519
+2026-03-28 09:48:53,983 INFO Found case 00-1519 in term 2001 on Oyez
+2026-03-28 09:48:54,501 INFO Found 0 brief doc(s) for 00-1519 on SCOTUS
+2026-03-28 09:48:54,502 INFO [00-1519] No merits briefs on SCOTUS — skipping
+2026-03-28 09:48:54,502 INFO [00-1519] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:48:54,502 INFO ============================================================
+2026-03-28 09:48:54,503 INFO [48/83] Processing: 00-1167
+2026-03-28 09:48:59,768 INFO Found case 00-1167 in term 2001 on Oyez
+2026-03-28 09:49:00,316 INFO Found 0 brief doc(s) for 00-1167 on SCOTUS
+2026-03-28 09:49:00,316 INFO [00-1167] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:00,317 INFO [00-1167] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:00,317 INFO ============================================================
+2026-03-28 09:49:00,317 INFO [49/83] Processing: 00-1293
+2026-03-28 09:49:05,083 INFO Found case 00-1293 in term 2001 on Oyez
+2026-03-28 09:49:05,591 INFO Found 0 brief doc(s) for 00-1293 on SCOTUS
+2026-03-28 09:49:05,592 INFO [00-1293] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:05,592 INFO [00-1293] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:05,592 INFO ============================================================
+2026-03-28 09:49:05,593 INFO [50/83] Processing: 00-1614
+2026-03-28 09:49:10,077 INFO Found case 00-1614 in term 2001 on Oyez
+2026-03-28 09:49:10,755 INFO Found 0 brief doc(s) for 00-1614 on SCOTUS
+2026-03-28 09:49:10,756 INFO [00-1614] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:10,756 INFO [00-1614] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:10,757 INFO ============================================================
+2026-03-28 09:49:10,757 INFO [51/83] Processing: 00-8452
+2026-03-28 09:49:16,386 INFO Found case 00-8452 in term 2001 on Oyez
+2026-03-28 09:49:17,197 INFO Found 0 brief doc(s) for 00-8452 on SCOTUS
+2026-03-28 09:49:17,197 INFO [00-8452] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:17,198 INFO [00-8452] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:17,198 INFO ============================================================
+2026-03-28 09:49:17,198 INFO [52/83] Processing: 00-860
+2026-03-28 09:49:21,869 INFO Found case 00-860 in term 2001 on Oyez
+2026-03-28 09:49:22,495 INFO Found 0 brief doc(s) for 00-860 on SCOTUS
+2026-03-28 09:49:22,496 INFO [00-860] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:22,496 INFO [00-860] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:22,496 INFO ============================================================
+2026-03-28 09:49:22,497 INFO [53/83] Processing: 00-1073
+2026-03-28 09:49:27,428 INFO Found case 00-1073 in term 2001 on Oyez
+2026-03-28 09:49:28,027 INFO Found 0 brief doc(s) for 00-1073 on SCOTUS
+2026-03-28 09:49:28,027 INFO [00-1073] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:28,028 INFO [00-1073] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:28,028 INFO ============================================================
+2026-03-28 09:49:28,028 INFO [54/83] Processing: 00-1260
+2026-03-28 09:49:32,156 INFO Found case 00-1260 in term 2001 on Oyez
+2026-03-28 09:49:32,831 INFO Found 0 brief doc(s) for 00-1260 on SCOTUS
+2026-03-28 09:49:32,831 INFO [00-1260] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:32,831 INFO [00-1260] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:32,832 INFO ============================================================
+2026-03-28 09:49:32,832 INFO [55/83] Processing: 00-6029
+2026-03-28 09:49:37,028 INFO Found case 00-6029 in term 2001 on Oyez
+2026-03-28 09:49:37,666 INFO Found 0 brief doc(s) for 00-6029 on SCOTUS
+2026-03-28 09:49:37,667 INFO [00-6029] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:37,667 INFO [00-6029] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:37,667 INFO ============================================================
+2026-03-28 09:49:37,668 INFO [56/83] Processing: 00-568
+2026-03-28 09:49:42,196 INFO Found case 00-568 in term 2001 on Oyez
+2026-03-28 09:49:42,816 INFO Found 0 brief doc(s) for 00-568 on SCOTUS
+2026-03-28 09:49:42,817 INFO [00-568] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:42,817 INFO [00-568] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:42,817 INFO ============================================================
+2026-03-28 09:49:42,817 INFO [57/83] Processing: 00-795
+2026-03-28 09:49:47,284 INFO Found case 00-795 in term 2001 on Oyez
+2026-03-28 09:49:47,821 INFO Found 0 brief doc(s) for 00-795 on SCOTUS
+2026-03-28 09:49:47,821 INFO [00-795] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:47,822 INFO [00-795] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:47,822 INFO ============================================================
+2026-03-28 09:49:47,822 INFO [58/83] Processing: 00-832
+2026-03-28 09:49:53,228 INFO Found case 00-832 in term 2001 on Oyez
+2026-03-28 09:49:53,779 INFO Found 0 brief doc(s) for 00-832 on SCOTUS
+2026-03-28 09:49:53,779 INFO [00-832] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:53,780 INFO [00-832] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:53,780 INFO ============================================================
+2026-03-28 09:49:53,780 INFO [59/83] Processing: 01-631
+2026-03-28 09:49:56,177 INFO Found case 01-631 in term 2001 on Oyez
+2026-03-28 09:49:56,846 INFO Found 0 brief doc(s) for 01-631 on SCOTUS
+2026-03-28 09:49:56,847 INFO [01-631] No merits briefs on SCOTUS — skipping
+2026-03-28 09:49:56,847 INFO [01-631] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:49:56,847 INFO ============================================================
+2026-03-28 09:49:56,848 INFO [60/83] Processing: 00-511
+2026-03-28 09:50:01,363 INFO Found case 00-511 in term 2001 on Oyez
+2026-03-28 09:50:02,014 INFO Found 0 brief doc(s) for 00-511 on SCOTUS
+2026-03-28 09:50:02,014 INFO [00-511] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:02,015 INFO [00-511] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:02,015 INFO ============================================================
+2026-03-28 09:50:02,015 INFO [61/83] Processing: 00-799
+2026-03-28 09:50:06,643 INFO Found case 00-799 in term 2001 on Oyez
+2026-03-28 09:50:07,208 INFO Found 0 brief doc(s) for 00-799 on SCOTUS
+2026-03-28 09:50:07,208 INFO [00-799] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:07,208 INFO [00-799] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:07,209 INFO ============================================================
+2026-03-28 09:50:07,209 INFO [62/83] Processing: 01-419
+2026-03-28 09:50:09,330 INFO Found case 01-419 in term 2001 on Oyez
+2026-03-28 09:50:09,917 INFO Found 0 brief doc(s) for 01-419 on SCOTUS
+2026-03-28 09:50:09,917 INFO [01-419] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:09,917 INFO [01-419] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:09,917 INFO ============================================================
+2026-03-28 09:50:09,917 INFO [63/83] Processing: 99-1996
+2026-03-28 09:50:17,951 INFO No case found on Oyez for 99-1996
+2026-03-28 09:50:17,952 INFO [99-1996] SKIP (no transcript): docket not found on Oyez
+2026-03-28 09:50:17,952 INFO ============================================================
+2026-03-28 09:50:17,952 INFO [64/83] Processing: 01-8419
+2026-03-28 09:50:20,224 INFO Found case 01-8419 in term 2001 on Oyez
+2026-03-28 09:50:20,224 INFO [01-8419] No oral argument audio on Oyez — skipping
+2026-03-28 09:50:20,225 INFO [01-8419] SKIP (no transcript): no oral_argument_audio on Oyez
+2026-03-28 09:50:20,225 INFO ============================================================
+2026-03-28 09:50:20,225 INFO [65/83] Processing: 00-1737
+2026-03-28 09:50:24,810 INFO Found case 00-1737 in term 2001 on Oyez
+2026-03-28 09:50:25,332 INFO Found 0 brief doc(s) for 00-1737 on SCOTUS
+2026-03-28 09:50:25,332 INFO [00-1737] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:25,333 INFO [00-1737] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:25,333 INFO ============================================================
+2026-03-28 09:50:25,333 INFO [66/83] Processing: 01-714
+2026-03-28 09:50:27,566 INFO Found case 01-714 in term 2001 on Oyez
+2026-03-28 09:50:28,049 INFO Found 0 brief doc(s) for 01-714 on SCOTUS
+2026-03-28 09:50:28,049 INFO [01-714] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:28,049 INFO [01-714] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:28,049 INFO ============================================================
+2026-03-28 09:50:28,049 INFO [67/83] Processing: 01-298
+2026-03-28 09:50:30,516 INFO Found case 01-298 in term 2001 on Oyez
+2026-03-28 09:50:31,065 INFO Found 0 brief doc(s) for 01-298 on SCOTUS
+2026-03-28 09:50:31,065 INFO [01-298] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:31,066 INFO [01-298] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:31,066 INFO ============================================================
+2026-03-28 09:50:31,066 INFO [68/83] Processing: 01-679
+2026-03-28 09:50:34,214 INFO Found case 01-679 in term 2001 on Oyez
+2026-03-28 09:50:34,746 INFO Found 0 brief doc(s) for 01-679 on SCOTUS
+2026-03-28 09:50:34,746 INFO [01-679] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:34,746 INFO [01-679] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:34,746 INFO ============================================================
+2026-03-28 09:50:34,746 INFO [69/83] Processing: 00-1831
+2026-03-28 09:50:39,801 INFO Found case 00-1831 in term 2001 on Oyez
+2026-03-28 09:50:40,303 INFO Found 0 brief doc(s) for 00-1831 on SCOTUS
+2026-03-28 09:50:40,303 INFO [00-1831] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:40,303 INFO [00-1831] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:40,303 INFO ============================================================
+2026-03-28 09:50:40,303 INFO [70/83] Processing: 01-595
+2026-03-28 09:50:42,412 INFO Found case 01-595 in term 2001 on Oyez
+2026-03-28 09:50:43,010 INFO Found 0 brief doc(s) for 01-595 on SCOTUS
+2026-03-28 09:50:43,010 INFO [01-595] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:43,010 INFO [01-595] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:43,010 INFO ============================================================
+2026-03-28 09:50:43,010 INFO [71/83] Processing: 00-1531
+2026-03-28 09:50:47,948 INFO Found case 00-1531 in term 2001 on Oyez
+2026-03-28 09:50:48,474 INFO Found 0 brief doc(s) for 00-1531 on SCOTUS
+2026-03-28 09:50:48,474 INFO [00-1531] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:48,474 INFO [00-1531] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:48,474 INFO ============================================================
+2026-03-28 09:50:48,474 INFO [72/83] Processing: 00-1567
+2026-03-28 09:50:53,135 INFO Found case 00-1567 in term 2001 on Oyez
+2026-03-28 09:50:53,695 INFO Found 0 brief doc(s) for 00-1567 on SCOTUS
+2026-03-28 09:50:53,695 INFO [00-1567] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:53,695 INFO [00-1567] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:53,695 INFO ============================================================
+2026-03-28 09:50:53,695 INFO [73/83] Processing: 01-682
+2026-03-28 09:50:56,855 INFO Found case 01-682 in term 2001 on Oyez
+2026-03-28 09:50:57,379 INFO Found 0 brief doc(s) for 01-682 on SCOTUS
+2026-03-28 09:50:57,380 INFO [01-682] No merits briefs on SCOTUS — skipping
+2026-03-28 09:50:57,380 INFO [01-682] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:50:57,380 INFO ============================================================
+2026-03-28 09:50:57,380 INFO [74/83] Processing: 01-417
+2026-03-28 09:51:00,306 INFO Found case 01-417 in term 2001 on Oyez
+2026-03-28 09:51:00,830 INFO Found 0 brief doc(s) for 01-417 on SCOTUS
+2026-03-28 09:51:00,830 INFO [01-417] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:00,830 INFO [01-417] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:00,830 INFO ============================================================
+2026-03-28 09:51:00,830 INFO [75/83] Processing: 00-973
+2026-03-28 09:51:05,963 INFO Found case 00-973 in term 2001 on Oyez
+2026-03-28 09:51:06,508 INFO Found 0 brief doc(s) for 00-973 on SCOTUS
+2026-03-28 09:51:06,509 INFO [00-973] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:06,509 INFO [00-973] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:06,509 INFO ============================================================
+2026-03-28 09:51:06,509 INFO [76/83] Processing: 00-758
+2026-03-28 09:51:11,305 INFO Found case 00-758 in term 2001 on Oyez
+2026-03-28 09:51:11,809 INFO Found 0 brief doc(s) for 00-758 on SCOTUS
+2026-03-28 09:51:11,810 INFO [00-758] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:11,810 INFO [00-758] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:11,810 INFO ============================================================
+2026-03-28 09:51:11,810 INFO [77/83] Processing: 01-400
+2026-03-28 09:51:14,310 INFO Found case 01-400 in term 2001 on Oyez
+2026-03-28 09:51:14,818 INFO Found 0 brief doc(s) for 01-400 on SCOTUS
+2026-03-28 09:51:14,818 INFO [01-400] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:14,819 INFO [01-400] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:14,819 INFO ============================================================
+2026-03-28 09:51:14,819 INFO [78/83] Processing: 00-1072
+2026-03-28 09:51:20,765 INFO Found case 00-1072 in term 2001 on Oyez
+2026-03-28 09:51:21,339 INFO Found 0 brief doc(s) for 00-1072 on SCOTUS
+2026-03-28 09:51:21,339 INFO [00-1072] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:21,339 INFO [00-1072] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:21,339 INFO ============================================================
+2026-03-28 09:51:21,340 INFO [79/83] Processing: 00-1514
+2026-03-28 09:51:26,560 INFO Found case 00-1514 in term 2001 on Oyez
+2026-03-28 09:51:27,053 INFO Found 0 brief doc(s) for 00-1514 on SCOTUS
+2026-03-28 09:51:27,053 INFO [00-1514] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:27,053 INFO [00-1514] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:27,053 INFO ============================================================
+2026-03-28 09:51:27,053 INFO [80/83] Processing: 00-6933
+2026-03-28 09:51:31,614 INFO Found case 00-6933 in term 2001 on Oyez
+2026-03-28 09:51:32,133 INFO Found 0 brief doc(s) for 00-6933 on SCOTUS
+2026-03-28 09:51:32,133 INFO [00-6933] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:32,133 INFO [00-6933] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:32,133 INFO ============================================================
+2026-03-28 09:51:32,133 INFO [81/83] Processing: 01-521
+2026-03-28 09:51:34,297 INFO Found case 01-521 in term 2001 on Oyez
+2026-03-28 09:51:34,809 INFO Found 0 brief doc(s) for 01-521 on SCOTUS
+2026-03-28 09:51:34,810 INFO [01-521] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:34,810 INFO [01-521] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:34,810 INFO ============================================================
+2026-03-28 09:51:34,810 INFO [82/83] Processing: 01-455
+2026-03-28 09:51:36,979 INFO Found case 01-455 in term 2001 on Oyez
+2026-03-28 09:51:37,491 INFO Found 0 brief doc(s) for 01-455 on SCOTUS
+2026-03-28 09:51:37,491 INFO [01-455] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:37,491 INFO [01-455] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:37,491 INFO ============================================================
+2026-03-28 09:51:37,491 INFO [83/83] Processing: 01-309
+2026-03-28 09:51:39,986 INFO Found case 01-309 in term 2001 on Oyez
+2026-03-28 09:51:40,892 INFO Found 0 brief doc(s) for 01-309 on SCOTUS
+2026-03-28 09:51:40,892 INFO [01-309] No merits briefs on SCOTUS — skipping
+2026-03-28 09:51:40,892 INFO [01-309] SKIP (no briefs): no merits briefs found on SCOTUS
+2026-03-28 09:51:40,892 INFO ============================================================
+2026-03-28 09:51:40,892 INFO DONE  total=83    both_found=0     skip_no_transcript=8     skip_no_briefs=75    failed=0   
+2026-03-28 10:11:38,822 INFO Discovering cases for term(s) [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026] via Oyez API…

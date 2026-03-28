@@ -6,10 +6,10 @@ A Python tool for downloading merits briefs from the US Supreme Court (SCOTUS) a
 
 ## Features
 
-- **Auto-discovers** all SCOTUS cases via the Oyez API — no manual case list needed
+- **Auto-discovers** SCOTUS cases via the Oyez API — no manual case list needed
+- **Only processes dockets with data in both databases** — skips any case missing SCOTUS briefs or an Oyez oral argument transcript
 - Downloads only **merits briefs** (petitioner, respondent, amicus curiae) — motions, letters and certificates are excluded
 - Generates **unique, descriptive filenames** (`{date}_{role}_{party}_{hash}.pdf`)
-- Fetches **oral argument transcripts** from Oyez for all terms
 - Computes **semantic similarity** (Sentence-Transformers) between briefs and oral arguments
 
 ---
@@ -22,39 +22,31 @@ A Python tool for downloading merits briefs from the US Supreme Court (SCOTUS) a
 pip install requests beautifulsoup4 lxml pymupdf pdfminer.six sentence-transformers
 ```
 
-### 2. Download Briefs — All Cases (Auto-Discovery)
+### 2. Scrape Briefs + Transcripts (Combined)
+
+Use `combined_scraper.py` as the single entry point. It checks both SCOTUS and Oyez for each docket and only saves data when **both** sources have content.
 
 ```bash
-# All cases, all terms (takes several hours)
-py scripts/crawler.py --all-cases
+# Single term (most common)
+py scripts/combined_scraper.py --term 2023
 
-# Single term
-py scripts/crawler.py --all-cases --term 2023
+# Year range (e.g. 2015–2023 inclusive)
+py scripts/combined_scraper.py --term 2015 2023
 
-# Year range  (e.g. 1997–2003 inclusive)
-py scripts/crawler.py --all-cases --term 1997 2003
-
-# Using a manual JSONL list instead
-py scripts/crawler.py --queries-json cases.jsonl
-```
-
-### 3. Fetch Oral Argument Transcripts (Oyez)
-
-```bash
-# All cases, all terms
-py scripts/oyez_scraper.py --all-cases
-
-# Single term
-py scripts/oyez_scraper.py --term 2023
-
-# Year range
-py scripts/oyez_scraper.py --term 1997 2003
+# All terms ever (takes several hours)
+py scripts/combined_scraper.py --all-cases
 
 # Specific dockets
-py scripts/oyez_scraper.py --cases 22-300 21-476
+py scripts/combined_scraper.py --cases 22-915 21-369
+
+# Re-download everything (overwrite existing files)
+py scripts/combined_scraper.py --term 2023 --overwrite
+
+# Skip very old cases with no PDFs
+py scripts/combined_scraper.py --all-cases --min-year 2000
 ```
 
-### 4. Analyze Similarity
+### 3. Analyze Similarity
 
 ```bash
 # All cases
@@ -73,40 +65,50 @@ py scripts/process_similarity.py --all-cases --model all-mpnet-base-v2 --output 
 
 ```
 data/
-└── {docket}/               e.g. 22-300/
-    ├── pdf/                Merits brief PDFs
-    │   └── 20221005_petitioner_New_York_State_Rifle_a3f2b1.pdf
-    ├── json/               Brief metadata + extracted text (JSON)
-    │   └── 20221005_petitioner_New_York_State_Rifle_a3f2b1.json
-    └── transcription/      Oyez oral argument transcript
-        └── 22-300__corpus.json
+└── {docket}/                    e.g. 22-915/
+    ├── pdf/                     Merits brief PDFs
+    │   └── 20230420_petitioner_Twitter_a3f2b1.pdf
+    ├── json/                    Brief metadata + extracted text (JSON)
+    │   └── 20230420_petitioner_Twitter_a3f2b1.json
+    └── transcription/           Oyez oral argument transcript
+        └── 22-915__corpus.json
 
 output/
-├── logs/scraper_output.log
+├── logs/combined_scraper.log
 └── all_cases_similarity_*.jsonl
 ```
 
+Only dockets that have **both** SCOTUS merits briefs and an Oyez transcript are written here.
+
 ---
 
-## Crawler (`scripts/crawler.py`)
+## Combined Scraper (`scripts/combined_scraper.py`)
 
 ### Arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--all-cases` | — | Auto-discover cases via Oyez API |
-| `--term YEAR [YEAR]` | — | Limit to one year or a range, e.g. `--term 2023` or `--term 1997 2003` |
-| `--queries-json FILE` | — | JSONL file with `docket_no` fields (alternative to `--all-cases`) |
+| `--term YEAR [YEAR]` | — | One year or a range, e.g. `--term 2023` or `--term 2015 2023` |
+| `--all-cases` | — | Auto-discover all cases via Oyez API |
+| `--cases DOCKET ...` | — | Specific dockets, e.g. `22-915 21-369` |
 | `--output-dir DIR` | `./data` | Root output directory |
 | `--min-interval SEC` | `1.5` | Seconds between requests |
-| `--min-year YEAR` | `1900` | Skip cases before this year (e.g. `--min-year 2000`) |
+| `--overwrite` | `False` | Re-download and overwrite existing files |
+
+### Skip Logic
+
+| Condition | Action |
+|-----------|--------|
+| Docket not found on Oyez, or no `oral_argument_audio` | `SKIP (no transcript)` |
+| Docket found on Oyez but SCOTUS has no merits briefs | `SKIP (no briefs)` |
+| Both briefs and transcript exist | Download everything |
 
 ### Document Filtering
 
 Only downloads documents that:
-- ✅ Are a petitioner, respondent, or amicus/amici curiae brief
+- ✅ Are a petitioner or respondent brief, or a petitioner/respondent reply
 - ✅ Are from cases with `YY-####` docket format
-- ❌ Excludes motions, certificates, proof of service, letters
+- ❌ Excludes amicus/amici curiae briefs, motions, certificates, proof of service, letters
 
 ### Filename Format
 
@@ -115,22 +117,11 @@ Only downloads documents that:
 ```
 Example: `20221005_amicus_Mountain_States_Legal_Foundation_b7c3d2.pdf`
 
----
+### End-of-run Summary
 
-## Oyez Scraper (`scripts/oyez_scraper.py`)
-
-### Arguments
-
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--all-cases` | — | Fetch all cases from Oyez API (paginated) |
-| `--term YEAR [YEAR]` | — | One year or range, e.g. `--term 2023` or `--term 1997 2003` |
-| `--cases DOCKET ...` | — | Specific dockets, e.g. `22-300 21-476` |
-| `--data-dir DIR` | `./data` | Root data directory |
-| `--min-interval SEC` | `1.5` | Seconds between API requests |
-| `--overwrite` | `False` | Overwrite existing transcript files |
-
-Transcripts are saved to `data/{docket}/transcription/{docket}__corpus.json`.
+```
+DONE  total=N  both_found=N  skip_no_transcript=N  skip_no_briefs=N  failed=N
+```
 
 ---
 
@@ -152,8 +143,7 @@ Transcripts are saved to `data/{docket}/transcription/{docket}__corpus.json`.
 ## Tips & Troubleshooting
 
 - Use `--min-interval 2.0` for large batches to be polite to servers
-- Use `--min-year 2000` on the crawler to skip very old cases that have no PDFs
-- Logs are written to `output/logs/scraper_output.log`
+- Logs are written to `output/logs/combined_scraper.log`
 - First similarity run downloads the model (~90 MB for default, ~420 MB for MPNet)
 
 ---
