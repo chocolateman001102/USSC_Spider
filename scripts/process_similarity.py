@@ -71,7 +71,7 @@ def is_party_brief(filename: str) -> bool:
     return True
 
 #chunk size和overlap不确定，暂定数值
-def chunk_text(text: str, chunk_size: int = 800, overlap: int = 200) -> List[str]:
+def chunk_text(text: str, chunk_size: int = 1600, overlap: int = 200) -> List[str]:
     if not text:
         return []
     # Normalize whitespace
