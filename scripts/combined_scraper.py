@@ -131,9 +131,9 @@ def extract_party_names(text: str) -> str:
     party_name = re.sub(r"\s*,\s*", " ", party_name)
     party_name = re.sub(r"\s+", " ", party_name).strip()
     words = [w for w in party_name.split() if len(w) > 2 or w.isupper()]
-    party_name = " ".join(words[:6]) if words else party_name
+    party_name = " ".join(words[:2]) if words else party_name
     party_name = sanitize_filename(party_name)
-    return (party_name[:70].strip() if len(party_name) > 70 else party_name) or "Unknown"
+    return (party_name[:25].strip() if len(party_name) > 25 else party_name) or "Unknown"
 
 
 # ---------------------------------------------------------------------------

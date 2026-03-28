@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "23-191",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/23-191.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/23/23-191/289927/20231117120531360_Willaims%20BIO.pdf",
+    "fetched_at": "2026-03-28T07:01:57.503737Z",
+    "sha256": "7748fa2611a3f89c533c6ba6403efbbee3a27c18289d383b05475568f43119a1",
+    "filename": "20231117_respondent_Fitzgerald_Washington_7748fa.json",
+    "file_size_bytes": 378081,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 150,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Nov 17 2023",
+      "extra": {
+        "date": "Nov 17 2023",
+        "custom_filename": "20231117_respondent_Fitzgerald_Washington_Alabama_Secretary_Labor_opposition"
+      }
+    },
+    "content": {
+      "page_text": [
+        "────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n──────────────────────────"
+      ],
+      "full_text": "────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

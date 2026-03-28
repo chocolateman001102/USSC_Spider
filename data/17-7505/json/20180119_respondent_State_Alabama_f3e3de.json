@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-7505",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/17-7505.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-7505/28563/20180119173811321_BIO%20Vernon%20Madison.pdf",
+    "fetched_at": "2026-03-28T04:43:01.036019Z",
+    "sha256": "f3e3de4a22e520e8421179eb905f7babfb69a86dcc861011d698cf346ba1ef98",
+    "filename": "20180119_respondent_State_Alabama_f3e3de.json",
+    "file_size_bytes": 222115,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 22,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jan 19 2018",
+      "extra": {
+        "date": "Jan 19 2018",
+        "custom_filename": "20180119_respondent_State_Alabama_opposition"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

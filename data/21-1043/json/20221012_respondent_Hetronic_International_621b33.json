@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "21-1043",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/21-1043.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/21/21-1043/242996/20221012165859121_21-1043%20bssb.pdf",
+    "fetched_at": "2026-03-28T06:29:38.876996Z",
+    "sha256": "621b33f55bdd4891868ed1346ee142845780736c8a8531428dc5bfa2b26aedb3",
+    "filename": "20221012_respondent_Hetronic_International_621b33.json",
+    "file_size_bytes": 1060780,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 18,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Oct 12 2022",
+      "extra": {
+        "date": "Oct 12 2022",
+        "custom_filename": "20221012_respondent_Hetronic_International_Inc"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

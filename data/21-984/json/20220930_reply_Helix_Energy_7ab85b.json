@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "21-984",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/21-984.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/21/21-984/242173/20220930123536891_No.%2021-984%20rb.pdfA.pdf",
+    "fetched_at": "2026-03-28T06:18:43.788169Z",
+    "sha256": "7ab85bd18414dcc2f24c6a2ffa41085983e1bc5ac462f1fbe9d7fcdb9f1ee374",
+    "filename": "20220930_reply_Helix_Energy_7ab85b.json",
+    "file_size_bytes": 2130079,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 31,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Sep 30 2022",
+      "extra": {
+        "date": "Sep 30 2022",
+        "custom_filename": "20220930_reply_Helix_Energy_Solutions_Group_Inc"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

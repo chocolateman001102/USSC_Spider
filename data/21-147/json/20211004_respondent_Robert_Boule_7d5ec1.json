@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "21-147",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/21-147.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/21/21-147/196038/20211108142847158_21-147%20redacted%20BIO.pdf",
+    "fetched_at": "2026-03-28T06:02:53.690634Z",
+    "sha256": "7d5ec196940707157f660faca546d7b88585e2c7859cb07d9dc3821e3b942eda",
+    "filename": "20211004_respondent_Robert_Boule_7d5ec1.json",
+    "file_size_bytes": 12135567,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 42,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Oct 04 2021",
+      "extra": {
+        "date": "Oct 04 2021",
+        "custom_filename": "20211004_respondent_Robert_Boule_opposition"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

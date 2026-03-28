@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-15",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/18-15.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-15/72649/20181119193331867_18-15.rb.pdf",
+    "fetched_at": "2026-03-28T04:59:36.035871Z",
+    "sha256": "4053193d35337be768349726bb50c0e3e001e0b7593916b962e3c6d9812ded9a",
+    "filename": "20181119_reply_James_L._405319.json",
+    "file_size_bytes": 127828,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 16,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Nov 19 2018",
+      "extra": {
+        "date": "Nov 19 2018",
+        "custom_filename": "20181119_reply_James_L._Kisor"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

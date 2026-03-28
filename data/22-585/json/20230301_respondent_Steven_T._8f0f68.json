@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "22-585",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/22-585.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/22/22-585/255967/20230301153218904_Culley%20BIO%20-%20PRINTED%20AND%20TO%20FILE.pdf",
+    "fetched_at": "2026-03-28T06:41:16.211713Z",
+    "sha256": "8f0f68f1e19b0141f9c2e3963475012a8aedaeb4d76eda9da1f4dfff632fc4b0",
+    "filename": "20230301_respondent_Steven_T._8f0f68.json",
+    "file_size_bytes": 463750,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 162,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 01 2023",
+      "extra": {
+        "date": "Mar 01 2023",
+        "custom_filename": "20230301_respondent_Steven_T._Marshall_Attorney_General_Alabama"
+      }
+    },
+    "content": {
+      "page_text": [
+        "────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n──────────────────────────"
+      ],
+      "full_text": "────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n────────────────────────── \n\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}
