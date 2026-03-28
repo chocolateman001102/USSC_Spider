@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-481",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/18-481.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-481/88748/20190215204958915_1.%20Brief%20on%20the%20Merits.pdf",
+    "fetched_at": "2026-03-28T05:03:20.132947Z",
+    "sha256": "4179038cc211ffdc12c59c7280dfbbd4462026e3d0bfef978125681dd10c459f",
+    "filename": "20190215_petitioner_Food_Marketing_Institute_417903.pdf",
+    "file_size_bytes": 369077,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 72,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Feb 15 2019",
+      "extra": {
+        "date": "Feb 15 2019",
+        "custom_filename": "20190215_petitioner_Food_Marketing_Institute"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

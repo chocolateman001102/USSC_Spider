@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "18-1150",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/18-1150.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/18/18-1150/100983/20190524141441530_2019-05-23%20Certiorari%20Reply%20-%20to%20Printer.pdf",
+    "fetched_at": "2026-03-28T05:16:21.659201Z",
+    "sha256": "183ce83b6cd5c16e409a237e7059faa06e4424992995d5488b7091ffe83f3fae",
+    "filename": "20190524_reply_State_Georgia_183ce8.pdf",
+    "file_size_bytes": 151570,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 17,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "May 24 2019",
+      "extra": {
+        "date": "May 24 2019",
+        "custom_filename": "20190524_reply_State_Georgia"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

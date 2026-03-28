@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-71",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/17-71.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-71/54383/20180716162410419_Respondents%20Markle%20Interests%20Unopposed%20App%20Ext%20Time%20to%20File%20Reply%20Brief.pdf",
+    "fetched_at": "2026-03-28T04:38:21.708024Z",
+    "sha256": "6cbb04652cf096da4cd76c0841456d07ffd6973a6bed19139a79bec06e58db5e",
+    "filename": "20180716_respondent_Application_(18A58)_respondents_Markle_Interests_6cbb04.pdf",
+    "file_size_bytes": 122670,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 4,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Jul 16 2018",
+      "extra": {
+        "date": "Jul 16 2018",
+        "custom_filename": "20180716_respondent_Application_(18A58)_respondents_Markle_Interests"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f"
+    }
+  }
+}

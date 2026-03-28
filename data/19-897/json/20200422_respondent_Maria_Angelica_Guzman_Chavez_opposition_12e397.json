@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "19-897",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/19-897.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/19/19-897/142603/20200617103146094_19-897%20BIO.pdf",
+    "fetched_at": "2026-03-28T05:35:19.667243Z",
+    "sha256": "12e397fab803c14549a452eea54c9672f08222fab1a488d6cef15550b113526a",
+    "filename": "20200422_respondent_Maria_Angelica_Guzman_Chavez_opposition_12e397.pdf",
+    "file_size_bytes": 8596334,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 30,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 22 2020",
+      "extra": {
+        "date": "Apr 22 2020",
+        "custom_filename": "20200422_respondent_Maria_Angelica_Guzman_Chavez_opposition"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

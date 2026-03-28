@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-778",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/17-778.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-778/42860/20180410110004668_Quarles%20Reply%20Brief.pdf",
+    "fetched_at": "2026-03-28T05:01:48.914278Z",
+    "sha256": "c9e571e279e92929bc8ac18572903a2f96fb951a207faf6b31fa6c3954ad844e",
+    "filename": "20180410_reply_Jamar_Quarles_c9e571.pdf",
+    "file_size_bytes": 111855,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 7,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Apr 10 2018",
+      "extra": {
+        "date": "Apr 10 2018",
+        "custom_filename": "20180410_reply_Jamar_Quarles"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f"
+    }
+  }
+}

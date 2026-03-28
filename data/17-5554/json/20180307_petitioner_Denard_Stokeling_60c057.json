@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-5554",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/17-5554.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-5554/37968/20180307105106870_Stokeling%20-%20Third%20Supplemental%20Brief%20of%20Petitioner.pdf",
+    "fetched_at": "2026-03-28T04:39:48.473129Z",
+    "sha256": "60c057dbd5f3e6d80a886e18db551ced622593a7b0309482cb7806c60e1348d0",
+    "filename": "20180307_petitioner_Denard_Stokeling_60c057.pdf",
+    "file_size_bytes": 2303914,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 8,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 07 2018",
+      "extra": {
+        "date": "Mar 07 2018",
+        "custom_filename": "20180307_petitioner_Denard_Stokeling"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "21-1397",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/21-1397.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/21/21-1397/233349/20220812131328643_21-1397%20MTO%20Reply%20Brief.pdf",
+    "fetched_at": "2026-03-28T06:25:47.156847Z",
+    "sha256": "404fa48ac192e9d2d77725c3b2d2a7ed8d0b824828ddba14d0fe92750ae9332f",
+    "filename": "20220812_reply_Grand_Jury_404fa4.pdf",
+    "file_size_bytes": 1036206,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 16,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Aug 12 2022",
+      "extra": {
+        "date": "Aug 12 2022",
+        "custom_filename": "20220812_reply_Grand_Jury"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

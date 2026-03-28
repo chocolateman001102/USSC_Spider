@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "23-929",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/23-929.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/23/23-929/309921/20241112104149420_23-929%20BIO.pdf",
+    "fetched_at": "2026-03-28T07:10:29.382204Z",
+    "sha256": "94f2d88894a0917464403c14b10e9f871791df6d2393211a55bb16fb3e98df24",
+    "filename": "20240515_respondent_Merrick_B._Garland_Attorney_General_opposition_94f2d8.pdf",
+    "file_size_bytes": 1332827,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 30,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "May 15 2024",
+      "extra": {
+        "date": "May 15 2024",
+        "custom_filename": "20240515_respondent_Merrick_B._Garland_Attorney_General_opposition"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "19-438",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/19-438.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/19/19-438/139437/20200330140221948_Pereida%20Merits%20Reply.pdf",
+    "fetched_at": "2026-03-28T05:30:32.504541Z",
+    "sha256": "3b7845ce0bd345e130c174b2af8bd202051b9e38f18061e2678f217eb9e65399",
+    "filename": "20200330_reply_Clemente_A._Pereida_3b7845.pdf",
+    "file_size_bytes": 322421,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 30,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Mar 30 2020",
+      "extra": {
+        "date": "Mar 30 2020",
+        "custom_filename": "20200330_reply_Clemente_A._Pereida"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

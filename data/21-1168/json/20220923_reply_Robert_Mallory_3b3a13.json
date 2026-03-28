@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "21-1168",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/21-1168.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/21/21-1168/238667/20220923154027569_21-1168rb.pdfA.pdf",
+    "fetched_at": "2026-03-28T06:17:00.380629Z",
+    "sha256": "3b3a13aa2f63fa17e3dc2abf761fd276dca08ab326c716f869da88a16ba8a388",
+    "filename": "20220923_reply_Robert_Mallory_3b3a13.pdf",
+    "file_size_bytes": 2161751,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 32,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Sep 23 2022",
+      "extra": {
+        "date": "Sep 23 2022",
+        "custom_filename": "20220923_reply_Robert_Mallory"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}

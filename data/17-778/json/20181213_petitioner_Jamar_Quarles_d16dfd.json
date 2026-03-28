@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "document": {
+    "query_code": "17-778",
+    "source_page_url": "https://www.supremecourt.gov/docket/docketfiles/html/public/17-778.html",
+    "download_url": "https://www.supremecourt.gov/DocketPDF/17/17-778/76077/20181213135104788_Supplemental%20Brief.pdf",
+    "fetched_at": "2026-03-28T05:01:51.156177Z",
+    "sha256": "d16dfd7a4a892eefbca53a6a783d9aefc296355aef79fd35d5d7990fbf40d2cf",
+    "filename": "20181213_petitioner_Jamar_Quarles_d16dfd.pdf",
+    "file_size_bytes": 134155,
+    "pages": 0,
+    "extraction": {
+      "method": "text",
+      "chars": 14,
+      "notes": "pdfminer"
+    },
+    "metadata": {
+      "title": "Main Document",
+      "date": "Dec 13 2018",
+      "extra": {
+        "date": "Dec 13 2018",
+        "custom_filename": "20181213_petitioner_Jamar_Quarles"
+      }
+    },
+    "content": {
+      "page_text": [],
+      "full_text": "\f\f\f\f\f\f\f\f\f\f\f\f\f\f"
+    }
+  }
+}
